@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin>
+<extension
+	point="org.eclipse.ui.navigator.navigatorContent">
+<!--@CincoGen PROJECT_WIZARD_MEINEDITORTOOL_NAV -->		
+<commonWizard
+	menuGroupId="mgl"
+	type="new"
+	wizardId="grafikeditor.wizard.meineditortoolproject">
+	<enablement></enablement>
+</commonWizard>
+</extension>
+<extension point="org.eclipse.ui.perspectives">
+<!--@CincoGen MEINEDITORTOOL-->
+	<perspective class="grafikeditor.MeinEditorToolPerspective" fixed="false" id="grafikeditor.meineditortoolperspective" name="MeinEditorTool Perspective">
+	</perspective>
+</extension><extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated CMeinEditor -->
+      <package class="grafikeditor.api.cmeineditor.CmeineditorPackage" genModel="src-gen/model/CMeinEditor.genmodel" uri="http://cinco.scce.info/product/cmeineditor"/>
+   </extension><extension point="de.jabc.cinco.meta.core.referenceregistry">
+	<!--@CincoGen MeinEditor-->
+		<FileExtensionsRegistry class="grafikeditor.graphiti.MeinEditorFileExtensions">
+		</FileExtensionsRegistry>
+	</extension><extension point="org.eclipse.ui.navigator.navigatorContent">
+	<!--@CincoGen MeinEditor-->
+		<commonWizard menuGroupId="mgl" type="new" wizardId="grafikeditor.wizard.meineditor">
+			<enablement/>
+		</commonWizard>
+	</extension><extension point="org.eclipse.ui.popupMenus">
+	<!--@CincoGen MeinEditor-->
+		<objectContribution adaptable="false" id="grafikeditor.MeinEditorObjectContributor" nameFilter="*meineditor" objectClass="org.eclipse.core.resources.IResource">
+			<action class="grafikeditor.graphiti.CreateMeinEditorDiagram" id="grafikeditor.CreateMeinEditorDiagramAction" label="Create MeinEditor Diagram">
+			</action>
+		</objectContribution>
+	</extension><extension point="org.eclipse.core.contenttype.contentTypes">
+	<!--@CincoGen MeinEditor-->
+		<content-type file-extensions="meineditor" id="grafikeditor.MeinEditorContentType" name="MeinEditor Content Type" priority="normal">
+		</content-type>
+	</extension><extension point="org.eclipse.ui.editors">
+	<!--@CincoGen MeinEditor-->
+		<editor class="grafikeditor.graphiti.MeinEditorDiagramEditor" contributorClass="org.eclipse.graphiti.ui.editor.DiagramEditorActionBarContributor" default="false" id="grafikeditor.MeinEditorEditor" matchingStrategy="org.eclipse.graphiti.ui.editor.DiagramEditorMatchingStrategy" name="MeinEditor Editor">
+			<contentTypeBinding contentTypeId="grafikeditor.MeinEditorContentType">
+			</contentTypeBinding>
+			<contentTypeBinding contentTypeId="org.eclipse.graphiti.content.diagram">
+			</contentTypeBinding>
+		</editor>
+	</extension><extension point="org.eclipse.ui.newWizards">
+	<!--@CincoGen MeinEditor-->
+		<wizard category="de.jabc.cinco.meta.core.wizards.category.cinco" class="grafikeditor.graphiti.wizard.NewMeinEditorDiagramWizard" id="grafikeditor.wizard.meineditor" name="New MeinEditor">
+		</wizard>
+	</extension><extension point="org.eclipse.graphiti.ui.imageProviders">
+	<!--@CincoGen MeinEditor-->
+		<imageProvider class="grafikeditor.graphiti.MeinEditorImageProvider" id="grafikeditor.MeinEditorImageProvider">
+		</imageProvider>
+	</extension><extension point="org.eclipse.graphiti.ui.diagramTypeProviders">
+	<!--@CincoGen MeinEditor-->
+		<diagramTypeProvider class="grafikeditor.graphiti.MeinEditorDiagramTypeProvider" description="This is the generated editor for the MeinEditor" id="grafikeditor.MeinEditorDiagramTypeProvider" name="MeinEditor Diagram Editor">
+			<diagramType id="grafikeditor.MeinEditorDiagramType">
+			</diagramType>
+			<imageProvider id="grafikeditor.MeinEditorImageProvider">
+			</imageProvider>
+		</diagramTypeProvider>
+	</extension><extension point="org.eclipse.graphiti.ui.diagramTypes">
+	<!--@CincoGen MeinEditor-->
+		<diagramType description="This is the generated diagram Type for MeinEditor" id="grafikeditor.MeinEditorDiagramType" name="MeinEditor Graphiti Diagram Type" type="MeinEditor">
+		</diagramType>
+	</extension><extension point="de.jabc.cinco.meta.plugin.generator.runtime.registry">
+<!--@MetaPlugin Generatable MeinEditor-->
+<graphmodel class="grafikeditor.meineditor.MeinEditor">
+</graphmodel>
+<generator bundle_id="grafikeditor" class="generation.Generator" outlet="/src-gen/">
+</generator>
+</extension><extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated MeinEditor -->
+      <package class="grafikeditor.meineditor.MeineditorPackage" genModel="src-gen/model/MeinEditor.genmodel" uri="http://cinco.scce.info/product/meineditor"/>
+   </extension><extension point="org.eclipse.ui.newWizards">
+<!--@CincoGen PROJECT_WIZARD_MEINEDITORTOOL_WIZ -->
+<wizard category="de.jabc.cinco.meta.core.wizards.category.cinco" class="grafikeditor.MeinEditorToolProjectWizard" id="grafikeditor.wizard.meineditortoolproject" name="New MeinEditorTool Project">
+</wizard>
+</extension></plugin>

@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="meineditor" nsURI="http://cinco.scce.info/product/meineditor"
+    nsPrefix="meineditor">
+  <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+    <details key="settingDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL"/>
+    <details key="invocationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL"/>
+    <details key="validationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL"/>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EClass" name="MeinEditor" eSuperTypes="http://www.jabc.de/cinco/gdl/graphmodel#//GraphModel">
+    <eOperations name="getTransitions" upperBound="-1" eType="#//Transition">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="return getModelElements(Transition.class);"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="getLabeledTransitions" upperBound="-1" eType="#//LabeledTransition">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="return getModelElements(LabeledTransition.class);"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="getStarts" upperBound="-1" eType="#//Start">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="return this.getModelElements(grafikeditor.meineditor.Start.class);"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="getEnds" upperBound="-1" eType="#//End">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="return this.getModelElements(grafikeditor.meineditor.End.class);"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="getTerminals" upperBound="-1" eType="#//Terminal">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="return this.getModelElements(grafikeditor.meineditor.Terminal.class);"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="getVariables" upperBound="-1" eType="#//Variable">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="return this.getModelElements(grafikeditor.meineditor.Variable.class);"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="getGateways" upperBound="-1" eType="#//Gateway">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="return this.getModelElements(grafikeditor.meineditor.Gateway.class);"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="getContainmentConstraints" upperBound="-1" eType="ecore:EClass platform:/plugin/de.jabc.cinco.meta.core.mgl.model/model/GraphModel.ecore#//ContainmentConstraint">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="@SuppressWarnings(&quot;unchecked&quot;)&#xA;de.jabc.cinco.meta.core.mgl.model.constraints.ContainmentConstraint constraint0 = &#xA;    new de.jabc.cinco.meta.core.mgl.model.constraints.ContainmentConstraint(0,-1,grafikeditor.meineditor.Start.class,grafikeditor.meineditor.End.class,grafikeditor.meineditor.Terminal.class,grafikeditor.meineditor.Variable.class,grafikeditor.meineditor.Gateway.class);&#xA;&#xA;        org.eclipse.emf.common.util.BasicEList&lt;de.jabc.cinco.meta.core.mgl.model.constraints.ContainmentConstraint>constraints = &#xA;            new org.eclipse.emf.common.util.BasicEList&lt;de.jabc.cinco.meta.core.mgl.model.constraints.ContainmentConstraint>(java.util.Arrays.asList(constraint0)); &#xA;        constraints.addAll(super.getContainmentConstraints());&#xA;return constraints;"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="getAllNodeTypes" upperBound="-1">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="&#xA;return new org.eclipse.emf.common.util.BasicEList&lt;Class&lt;? extends Node>>(java.util.Arrays.asList(grafikeditor.meineditor.Start.class,grafikeditor.meineditor.End.class,grafikeditor.meineditor.Terminal.class,grafikeditor.meineditor.Variable.class,grafikeditor.meineditor.Gateway.class));"/>
+      </eAnnotations>
+      <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaClass">
+        <eTypeArguments>
+          <eUpperBound eClassifier="ecore:EClass http://www.jabc.de/cinco/gdl/graphmodel#//Node"/>
+        </eTypeArguments>
+      </eGenericType>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="modelName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Start" eSuperTypes="http://www.jabc.de/cinco/gdl/graphmodel#//Node">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="checkOutgoingStartLabeledTransition0"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL">
+      <details key="checkOutgoingStartLabeledTransition0" value="(self.outgoing->select(elem| elem.oclIsKindOf(LabeledTransition))->size())=1"/>
+    </eAnnotations>
+    <eOperations name="getOutgoingConstraints" upperBound="-1" eType="ecore:EClass platform:/plugin/de.jabc.cinco.meta.core.mgl.model/model/GraphModel.ecore#//ConnectionConstraint">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="ConnectionConstraint outgoingConstraint0 = new ConnectionConstraint(true,1,1,grafikeditor.meineditor.LabeledTransition.class);&#xA;&#xA;return new org.eclipse.emf.common.util.BasicEList&lt;ConnectionConstraint>(java.util.Arrays.asList(outgoingConstraint0));&#xA;"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="getEndSuccessors" upperBound="-1" eType="#//End">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="&#xA;&#xA;return getSuccessors(grafikeditor.meineditor.End.class);"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="getTerminalSuccessors" upperBound="-1" eType="#//Terminal">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="&#xA;&#xA;return getSuccessors(grafikeditor.meineditor.Terminal.class);"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="getVariableSuccessors" upperBound="-1" eType="#//Variable">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="&#xA;&#xA;return getSuccessors(grafikeditor.meineditor.Variable.class);"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="getGatewaySuccessors" upperBound="-1" eType="#//Gateway">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="&#xA;&#xA;return getSuccessors(grafikeditor.meineditor.Gateway.class);"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="getSuccessors" upperBound="-1" eType="ecore:EClass http://www.jabc.de/cinco/gdl/graphmodel#//Node">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="&#xA;&#xA;return getSuccessors(Node.class);"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="getRootElement" eType="#//MeinEditor">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="return (grafikeditor.meineditor.MeinEditor)super.getRootElement();"/>
+      </eAnnotations>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="End" eSuperTypes="http://www.jabc.de/cinco/gdl/graphmodel#//Node">
+    <eOperations name="getIncomingConstraints" upperBound="-1" eType="ecore:EClass platform:/plugin/de.jabc.cinco.meta.core.mgl.model/model/GraphModel.ecore#//ConnectionConstraint">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="ConnectionConstraint incomingConstraint0 = new ConnectionConstraint(false,1,-1,grafikeditor.meineditor.Transition.class,grafikeditor.meineditor.LabeledTransition.class);&#xA;&#xA;return new org.eclipse.emf.common.util.BasicEList&lt;ConnectionConstraint>(java.util.Arrays.asList(incomingConstraint0));&#xA;"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="getStartPredecessors" upperBound="-1" eType="#//Start">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="&#xA;&#xA;return getPredecessors(grafikeditor.meineditor.Start.class);"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="getTerminalPredecessors" upperBound="-1" eType="#//Terminal">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="&#xA;&#xA;return getPredecessors(grafikeditor.meineditor.Terminal.class);"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="getGatewayPredecessors" upperBound="-1" eType="#//Gateway">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="&#xA;&#xA;return getPredecessors(grafikeditor.meineditor.Gateway.class);"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="getVariablePredecessors" upperBound="-1" eType="#//Variable">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="&#xA;&#xA;return getPredecessors(grafikeditor.meineditor.Variable.class);"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="getPredecessors" upperBound="-1" eType="ecore:EClass http://www.jabc.de/cinco/gdl/graphmodel#//Node">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="&#xA;&#xA;return getPredecessors(Node.class);"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="getRootElement" eType="#//MeinEditor">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="return (grafikeditor.meineditor.MeinEditor)super.getRootElement();"/>
+      </eAnnotations>
+    </eOperations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Terminal" eSuperTypes="http://www.jabc.de/cinco/gdl/graphmodel#//Node">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="checkOutgoingTerminalLabeledTransition0 checkIncomingTerminalLabeledTransitionTransition0"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL">
+      <details key="checkIncomingTerminalLabeledTransitionTransition0" value="(self.incoming->select(elem| elem.oclIsKindOf(Transition))->size())+(self.incoming->select(elem| elem.oclIsKindOf(LabeledTransition))->size())>=1"/>
+      <details key="checkOutgoingTerminalLabeledTransition0" value="(self.outgoing->select(elem| elem.oclIsKindOf(LabeledTransition))->size())>=1"/>
+    </eAnnotations>
+    <eOperations name="getIncomingConstraints" upperBound="-1" eType="ecore:EClass platform:/plugin/de.jabc.cinco.meta.core.mgl.model/model/GraphModel.ecore#//ConnectionConstraint">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="ConnectionConstraint incomingConstraint0 = new ConnectionConstraint(false,1,-1,grafikeditor.meineditor.Transition.class,grafikeditor.meineditor.LabeledTransition.class);&#xA;&#xA;return new org.eclipse.emf.common.util.BasicEList&lt;ConnectionConstraint>(java.util.Arrays.asList(incomingConstraint0));&#xA;"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="getOutgoingConstraints" upperBound="-1" eType="ecore:EClass platform:/plugin/de.jabc.cinco.meta.core.mgl.model/model/GraphModel.ecore#//ConnectionConstraint">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="ConnectionConstraint outgoingConstraint0 = new ConnectionConstraint(true,1,-1,grafikeditor.meineditor.LabeledTransition.class);&#xA;&#xA;return new org.eclipse.emf.common.util.BasicEList&lt;ConnectionConstraint>(java.util.Arrays.asList(outgoingConstraint0));&#xA;"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="getStartPredecessors" upperBound="-1" eType="#//Start">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="&#xA;&#xA;return getPredecessors(grafikeditor.meineditor.Start.class);"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="getTerminalPredecessors" upperBound="-1" eType="#//Terminal">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="&#xA;&#xA;return getPredecessors(grafikeditor.meineditor.Terminal.class);"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="getGatewayPredecessors" upperBound="-1" eType="#//Gateway">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="&#xA;&#xA;return getPredecessors(grafikeditor.meineditor.Gateway.class);"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="getVariablePredecessors" upperBound="-1" eType="#//Variable">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="&#xA;&#xA;return getPredecessors(grafikeditor.meineditor.Variable.class);"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="getPredecessors" upperBound="-1" eType="ecore:EClass http://www.jabc.de/cinco/gdl/graphmodel#//Node">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="&#xA;&#xA;return getPredecessors(Node.class);"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="getEndSuccessors" upperBound="-1" eType="#//End">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="&#xA;&#xA;return getSuccessors(grafikeditor.meineditor.End.class);"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="getTerminalSuccessors" upperBound="-1" eType="#//Terminal">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="&#xA;&#xA;return getSuccessors(grafikeditor.meineditor.Terminal.class);"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="getVariableSuccessors" upperBound="-1" eType="#//Variable">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="&#xA;&#xA;return getSuccessors(grafikeditor.meineditor.Variable.class);"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="getGatewaySuccessors" upperBound="-1" eType="#//Gateway">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="&#xA;&#xA;return getSuccessors(grafikeditor.meineditor.Gateway.class);"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="getSuccessors" upperBound="-1" eType="ecore:EClass http://www.jabc.de/cinco/gdl/graphmodel#//Node">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="&#xA;&#xA;return getSuccessors(Node.class);"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="getRootElement" eType="#//MeinEditor">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="return (grafikeditor.meineditor.MeinEditor)super.getRootElement();"/>
+      </eAnnotations>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Variable" eSuperTypes="http://www.jabc.de/cinco/gdl/graphmodel#//Node">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="checkOutgoingVariableLabeledTransition0 checkIncomingVariableLabeledTransitionTransition0"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL">
+      <details key="checkIncomingVariableLabeledTransitionTransition0" value="(self.incoming->select(elem| elem.oclIsKindOf(Transition))->size())+(self.incoming->select(elem| elem.oclIsKindOf(LabeledTransition))->size())>=1"/>
+      <details key="checkOutgoingVariableLabeledTransition0" value="(self.outgoing->select(elem| elem.oclIsKindOf(LabeledTransition))->size())>=1"/>
+    </eAnnotations>
+    <eOperations name="getIncomingConstraints" upperBound="-1" eType="ecore:EClass platform:/plugin/de.jabc.cinco.meta.core.mgl.model/model/GraphModel.ecore#//ConnectionConstraint">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="ConnectionConstraint incomingConstraint0 = new ConnectionConstraint(false,1,-1,grafikeditor.meineditor.Transition.class,grafikeditor.meineditor.LabeledTransition.class);&#xA;&#xA;return new org.eclipse.emf.common.util.BasicEList&lt;ConnectionConstraint>(java.util.Arrays.asList(incomingConstraint0));&#xA;"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="getOutgoingConstraints" upperBound="-1" eType="ecore:EClass platform:/plugin/de.jabc.cinco.meta.core.mgl.model/model/GraphModel.ecore#//ConnectionConstraint">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="ConnectionConstraint outgoingConstraint0 = new ConnectionConstraint(true,1,-1,grafikeditor.meineditor.LabeledTransition.class);&#xA;&#xA;return new org.eclipse.emf.common.util.BasicEList&lt;ConnectionConstraint>(java.util.Arrays.asList(outgoingConstraint0));&#xA;"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="getStartPredecessors" upperBound="-1" eType="#//Start">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="&#xA;&#xA;return getPredecessors(grafikeditor.meineditor.Start.class);"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="getTerminalPredecessors" upperBound="-1" eType="#//Terminal">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="&#xA;&#xA;return getPredecessors(grafikeditor.meineditor.Terminal.class);"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="getGatewayPredecessors" upperBound="-1" eType="#//Gateway">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="&#xA;&#xA;return getPredecessors(grafikeditor.meineditor.Gateway.class);"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="getVariablePredecessors" upperBound="-1" eType="#//Variable">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="&#xA;&#xA;return getPredecessors(grafikeditor.meineditor.Variable.class);"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="getPredecessors" upperBound="-1" eType="ecore:EClass http://www.jabc.de/cinco/gdl/graphmodel#//Node">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="&#xA;&#xA;return getPredecessors(Node.class);"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="getEndSuccessors" upperBound="-1" eType="#//End">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="&#xA;&#xA;return getSuccessors(grafikeditor.meineditor.End.class);"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="getTerminalSuccessors" upperBound="-1" eType="#//Terminal">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="&#xA;&#xA;return getSuccessors(grafikeditor.meineditor.Terminal.class);"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="getVariableSuccessors" upperBound="-1" eType="#//Variable">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="&#xA;&#xA;return getSuccessors(grafikeditor.meineditor.Variable.class);"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="getGatewaySuccessors" upperBound="-1" eType="#//Gateway">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="&#xA;&#xA;return getSuccessors(grafikeditor.meineditor.Gateway.class);"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="getSuccessors" upperBound="-1" eType="ecore:EClass http://www.jabc.de/cinco/gdl/graphmodel#//Node">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="&#xA;&#xA;return getSuccessors(Node.class);"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="getRootElement" eType="#//MeinEditor">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="return (grafikeditor.meineditor.MeinEditor)super.getRootElement();"/>
+      </eAnnotations>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Gateway" eSuperTypes="http://www.jabc.de/cinco/gdl/graphmodel#//Node">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="checkOutgoingGatewayLabeledTransition0 checkIncomingGatewayLabeledTransitionTransition0"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL">
+      <details key="checkIncomingGatewayLabeledTransitionTransition0" value="(self.incoming->select(elem| elem.oclIsKindOf(Transition))->size())+(self.incoming->select(elem| elem.oclIsKindOf(LabeledTransition))->size())>=1"/>
+      <details key="checkOutgoingGatewayLabeledTransition0" value="(self.outgoing->select(elem| elem.oclIsKindOf(LabeledTransition))->size())>=1"/>
+    </eAnnotations>
+    <eOperations name="getIncomingConstraints" upperBound="-1" eType="ecore:EClass platform:/plugin/de.jabc.cinco.meta.core.mgl.model/model/GraphModel.ecore#//ConnectionConstraint">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="ConnectionConstraint incomingConstraint0 = new ConnectionConstraint(false,1,-1,grafikeditor.meineditor.Transition.class,grafikeditor.meineditor.LabeledTransition.class);&#xA;&#xA;return new org.eclipse.emf.common.util.BasicEList&lt;ConnectionConstraint>(java.util.Arrays.asList(incomingConstraint0));&#xA;"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="getOutgoingConstraints" upperBound="-1" eType="ecore:EClass platform:/plugin/de.jabc.cinco.meta.core.mgl.model/model/GraphModel.ecore#//ConnectionConstraint">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="ConnectionConstraint outgoingConstraint0 = new ConnectionConstraint(true,1,-1,grafikeditor.meineditor.LabeledTransition.class);&#xA;&#xA;return new org.eclipse.emf.common.util.BasicEList&lt;ConnectionConstraint>(java.util.Arrays.asList(outgoingConstraint0));&#xA;"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="getStartPredecessors" upperBound="-1" eType="#//Start">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="&#xA;&#xA;return getPredecessors(grafikeditor.meineditor.Start.class);"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="getTerminalPredecessors" upperBound="-1" eType="#//Terminal">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="&#xA;&#xA;return getPredecessors(grafikeditor.meineditor.Terminal.class);"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="getGatewayPredecessors" upperBound="-1" eType="#//Gateway">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="&#xA;&#xA;return getPredecessors(grafikeditor.meineditor.Gateway.class);"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="getVariablePredecessors" upperBound="-1" eType="#//Variable">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="&#xA;&#xA;return getPredecessors(grafikeditor.meineditor.Variable.class);"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="getPredecessors" upperBound="-1" eType="ecore:EClass http://www.jabc.de/cinco/gdl/graphmodel#//Node">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="&#xA;&#xA;return getPredecessors(Node.class);"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="getEndSuccessors" upperBound="-1" eType="#//End">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="&#xA;&#xA;return getSuccessors(grafikeditor.meineditor.End.class);"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="getTerminalSuccessors" upperBound="-1" eType="#//Terminal">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="&#xA;&#xA;return getSuccessors(grafikeditor.meineditor.Terminal.class);"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="getVariableSuccessors" upperBound="-1" eType="#//Variable">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="&#xA;&#xA;return getSuccessors(grafikeditor.meineditor.Variable.class);"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="getGatewaySuccessors" upperBound="-1" eType="#//Gateway">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="&#xA;&#xA;return getSuccessors(grafikeditor.meineditor.Gateway.class);"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="getSuccessors" upperBound="-1" eType="ecore:EClass http://www.jabc.de/cinco/gdl/graphmodel#//Node">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="&#xA;&#xA;return getSuccessors(Node.class);"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="getRootElement" eType="#//MeinEditor">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="return (grafikeditor.meineditor.MeinEditor)super.getRootElement();"/>
+      </eAnnotations>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Transition" eSuperTypes="http://www.jabc.de/cinco/gdl/graphmodel#//Edge"/>
+  <eClassifiers xsi:type="ecore:EClass" name="LabeledTransition" eSuperTypes="http://www.jabc.de/cinco/gdl/graphmodel#//Edge">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="label" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+</ecore:EPackage>

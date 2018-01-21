@@ -1,0 +1,1385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/grafikeditor/src-gen" modelPluginID="grafikeditor" modelName="CMeinEditor" complianceLevel="8.0" copyrightFields="false" editPluginID="grafikeditor.edit" editorPluginID="grafikeditor.editor" testsPluginID="grafikeditor.tests" runtimeVersion="2.10">
+  <genPackages prefix="Cmeineditor" basePackage="grafikeditor.api" disposableProviderFactory="true">
+    <ecorePackage href="CMeinEditor.ecore#/"/>
+    <genClasses>
+      <ecoreClass href="CMeinEditor.ecore#//CMeinEditor"/>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CMeinEditor/update"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CMeinEditor/getModelName"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CMeinEditor/setModelName"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CMeinEditor/setModelName/arg"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CMeinEditor/getCStarts"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CMeinEditor/getCEnds"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CMeinEditor/getCTerminals"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CMeinEditor/getCVariables"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CMeinEditor/getCGateways"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CMeinEditor/getCTransitions"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CMeinEditor/getCLabeledTransitions"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CMeinEditor/getAllNodeTypes"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CMeinEditor/newCStart"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CMeinEditor/newCStart/x"/>
+        </genParameters>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CMeinEditor/newCStart/y"/>
+        </genParameters>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CMeinEditor/newCStart/width"/>
+        </genParameters>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CMeinEditor/newCStart/height"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CMeinEditor/newCStart.1"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CMeinEditor/newCStart.1/x"/>
+        </genParameters>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CMeinEditor/newCStart.1/y"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CMeinEditor/canNewCStart"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CMeinEditor/newCEnd"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CMeinEditor/newCEnd/x"/>
+        </genParameters>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CMeinEditor/newCEnd/y"/>
+        </genParameters>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CMeinEditor/newCEnd/width"/>
+        </genParameters>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CMeinEditor/newCEnd/height"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CMeinEditor/newCEnd.1"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CMeinEditor/newCEnd.1/x"/>
+        </genParameters>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CMeinEditor/newCEnd.1/y"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CMeinEditor/canNewCEnd"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CMeinEditor/newCTerminal"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CMeinEditor/newCTerminal/x"/>
+        </genParameters>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CMeinEditor/newCTerminal/y"/>
+        </genParameters>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CMeinEditor/newCTerminal/width"/>
+        </genParameters>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CMeinEditor/newCTerminal/height"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CMeinEditor/newCTerminal.1"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CMeinEditor/newCTerminal.1/x"/>
+        </genParameters>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CMeinEditor/newCTerminal.1/y"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CMeinEditor/canNewCTerminal"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CMeinEditor/newCVariable"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CMeinEditor/newCVariable/x"/>
+        </genParameters>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CMeinEditor/newCVariable/y"/>
+        </genParameters>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CMeinEditor/newCVariable/width"/>
+        </genParameters>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CMeinEditor/newCVariable/height"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CMeinEditor/newCVariable.1"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CMeinEditor/newCVariable.1/x"/>
+        </genParameters>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CMeinEditor/newCVariable.1/y"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CMeinEditor/canNewCVariable"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CMeinEditor/newCGateway"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CMeinEditor/newCGateway/x"/>
+        </genParameters>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CMeinEditor/newCGateway/y"/>
+        </genParameters>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CMeinEditor/newCGateway/width"/>
+        </genParameters>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CMeinEditor/newCGateway/height"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CMeinEditor/newCGateway.1"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CMeinEditor/newCGateway.1/x"/>
+        </genParameters>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CMeinEditor/newCGateway.1/y"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CMeinEditor/canNewCGateway"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CMeinEditor/getCTransition"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CMeinEditor/getCTransition/me"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CMeinEditor/getCLabeledTransition"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CMeinEditor/getCLabeledTransition/me"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CMeinEditor/findCStart"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CMeinEditor/findCStart/me"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CMeinEditor/findCEnd"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CMeinEditor/findCEnd/me"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CMeinEditor/findCTerminal"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CMeinEditor/findCTerminal/me"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CMeinEditor/findCVariable"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CMeinEditor/findCVariable/me"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CMeinEditor/findCGateway"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CMeinEditor/findCGateway/me"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CMeinEditor/findCTransition"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CMeinEditor/findCTransition/me"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CMeinEditor/findCLabeledTransition"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CMeinEditor/findCLabeledTransition/me"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CMeinEditor/getCRootElement"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CMeinEditor/findCModelElement"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CMeinEditor/findCModelElement/me"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CMeinEditor/findCNode"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CMeinEditor/findCNode/me"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CMeinEditor/findCEdge"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CMeinEditor/findCEdge/me"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CMeinEditor/findCModelElementContainer"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CMeinEditor/findCModelElementContainer/me"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CMeinEditor/canDeleteModelElement"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CMeinEditor/canDeleteModelElement/me"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CMeinEditor/deleteModelElement"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CMeinEditor/deleteModelElement/me"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CMeinEditor/highlight"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CMeinEditor/highlight/elements"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CMeinEditor/getCMeinEditor"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CMeinEditor/getCMeinEditor/me"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="CMeinEditor.ecore#//CStart"/>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CStart/update"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CStart/getName"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CStart/setName"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CStart/setName/arg"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CStart/getEndSuccessors"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CStart/getTerminalSuccessors"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CStart/getVariableSuccessors"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CStart/getGatewaySuccessors"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CStart/getCRootElement"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CStart/delete"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CStart/canDelete"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CStart/highlight"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CStart/moveTo"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CStart/moveTo/container"/>
+        </genParameters>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CStart/moveTo/x"/>
+        </genParameters>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CStart/moveTo/y"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CStart/canMoveTo"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CStart/canMoveTo/container"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CStart/canClone"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CStart/canClone/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CStart/clone"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CStart/clone/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CStart/resize"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CStart/resize/width"/>
+        </genParameters>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CStart/resize/height"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CStart/newCLabeledTransition"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CStart/newCLabeledTransition/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CStart/canNewCLabeledTransition"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CStart/canNewCLabeledTransition/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CStart/newCLabeledTransition.1"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CStart/newCLabeledTransition.1/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CStart/canNewCLabeledTransition.1"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CStart/canNewCLabeledTransition.1/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CStart/newCLabeledTransition.2"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CStart/newCLabeledTransition.2/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CStart/canNewCLabeledTransition.2"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CStart/canNewCLabeledTransition.2/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CStart/newCLabeledTransition.3"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CStart/newCLabeledTransition.3/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CStart/canNewCLabeledTransition.3"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CStart/canNewCLabeledTransition.3/target"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="CMeinEditor.ecore#//CEnd"/>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CEnd/update"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CEnd/getTerminalPredecessors"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CEnd/getGatewayPredecessors"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CEnd/getStartPredecessors"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CEnd/getVariablePredecessors"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CEnd/getCRootElement"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CEnd/delete"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CEnd/canDelete"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CEnd/highlight"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CEnd/moveTo"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CEnd/moveTo/container"/>
+        </genParameters>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CEnd/moveTo/x"/>
+        </genParameters>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CEnd/moveTo/y"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CEnd/canMoveTo"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CEnd/canMoveTo/container"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CEnd/canClone"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CEnd/canClone/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CEnd/clone"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CEnd/clone/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CEnd/resize"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CEnd/resize/width"/>
+        </genParameters>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CEnd/resize/height"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="CMeinEditor.ecore#//CTerminal"/>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CTerminal/update"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CTerminal/getName"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CTerminal/setName"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CTerminal/setName/arg"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CTerminal/getTerminalPredecessors"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CTerminal/getGatewayPredecessors"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CTerminal/getStartPredecessors"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CTerminal/getVariablePredecessors"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CTerminal/getEndSuccessors"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CTerminal/getTerminalSuccessors"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CTerminal/getVariableSuccessors"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CTerminal/getGatewaySuccessors"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CTerminal/getCRootElement"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CTerminal/delete"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CTerminal/canDelete"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CTerminal/highlight"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CTerminal/moveTo"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CTerminal/moveTo/container"/>
+        </genParameters>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CTerminal/moveTo/x"/>
+        </genParameters>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CTerminal/moveTo/y"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CTerminal/canMoveTo"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CTerminal/canMoveTo/container"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CTerminal/canClone"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CTerminal/canClone/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CTerminal/clone"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CTerminal/clone/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CTerminal/resize"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CTerminal/resize/width"/>
+        </genParameters>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CTerminal/resize/height"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CTerminal/newCLabeledTransition"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CTerminal/newCLabeledTransition/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CTerminal/canNewCLabeledTransition"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CTerminal/canNewCLabeledTransition/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CTerminal/newCLabeledTransition.1"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CTerminal/newCLabeledTransition.1/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CTerminal/canNewCLabeledTransition.1"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CTerminal/canNewCLabeledTransition.1/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CTerminal/newCLabeledTransition.2"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CTerminal/newCLabeledTransition.2/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CTerminal/canNewCLabeledTransition.2"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CTerminal/canNewCLabeledTransition.2/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CTerminal/newCLabeledTransition.3"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CTerminal/newCLabeledTransition.3/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CTerminal/canNewCLabeledTransition.3"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CTerminal/canNewCLabeledTransition.3/target"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="CMeinEditor.ecore#//CVariable"/>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CVariable/update"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CVariable/getName"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CVariable/setName"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CVariable/setName/arg"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CVariable/getTerminalPredecessors"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CVariable/getGatewayPredecessors"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CVariable/getStartPredecessors"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CVariable/getVariablePredecessors"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CVariable/getEndSuccessors"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CVariable/getTerminalSuccessors"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CVariable/getVariableSuccessors"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CVariable/getGatewaySuccessors"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CVariable/getCRootElement"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CVariable/delete"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CVariable/canDelete"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CVariable/highlight"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CVariable/moveTo"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CVariable/moveTo/container"/>
+        </genParameters>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CVariable/moveTo/x"/>
+        </genParameters>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CVariable/moveTo/y"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CVariable/canMoveTo"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CVariable/canMoveTo/container"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CVariable/canClone"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CVariable/canClone/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CVariable/clone"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CVariable/clone/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CVariable/resize"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CVariable/resize/width"/>
+        </genParameters>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CVariable/resize/height"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CVariable/newCLabeledTransition"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CVariable/newCLabeledTransition/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CVariable/canNewCLabeledTransition"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CVariable/canNewCLabeledTransition/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CVariable/newCLabeledTransition.1"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CVariable/newCLabeledTransition.1/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CVariable/canNewCLabeledTransition.1"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CVariable/canNewCLabeledTransition.1/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CVariable/newCLabeledTransition.2"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CVariable/newCLabeledTransition.2/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CVariable/canNewCLabeledTransition.2"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CVariable/canNewCLabeledTransition.2/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CVariable/newCLabeledTransition.3"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CVariable/newCLabeledTransition.3/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CVariable/canNewCLabeledTransition.3"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CVariable/canNewCLabeledTransition.3/target"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="CMeinEditor.ecore#//CGateway"/>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CGateway/update"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CGateway/getName"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CGateway/setName"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CGateway/setName/arg"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CGateway/getTerminalPredecessors"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CGateway/getGatewayPredecessors"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CGateway/getStartPredecessors"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CGateway/getVariablePredecessors"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CGateway/getEndSuccessors"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CGateway/getTerminalSuccessors"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CGateway/getVariableSuccessors"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CGateway/getGatewaySuccessors"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CGateway/getCRootElement"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CGateway/delete"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CGateway/canDelete"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CGateway/highlight"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CGateway/moveTo"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CGateway/moveTo/container"/>
+        </genParameters>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CGateway/moveTo/x"/>
+        </genParameters>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CGateway/moveTo/y"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CGateway/canMoveTo"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CGateway/canMoveTo/container"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CGateway/canClone"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CGateway/canClone/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CGateway/clone"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CGateway/clone/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CGateway/resize"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CGateway/resize/width"/>
+        </genParameters>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CGateway/resize/height"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CGateway/newCLabeledTransition"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CGateway/newCLabeledTransition/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CGateway/canNewCLabeledTransition"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CGateway/canNewCLabeledTransition/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CGateway/newCLabeledTransition.1"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CGateway/newCLabeledTransition.1/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CGateway/canNewCLabeledTransition.1"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CGateway/canNewCLabeledTransition.1/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CGateway/newCLabeledTransition.2"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CGateway/newCLabeledTransition.2/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CGateway/canNewCLabeledTransition.2"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CGateway/canNewCLabeledTransition.2/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CGateway/newCLabeledTransition.3"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CGateway/newCLabeledTransition.3/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CGateway/canNewCLabeledTransition.3"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CGateway/canNewCLabeledTransition.3/target"/>
+        </genParameters>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="CMeinEditor.ecore#//CTransition"/>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CTransition/update"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CTransition/canReconnectTarget"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CTransition/canReconnectTarget/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CTransition/reconnectTarget"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CTransition/reconnectTarget/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CTransition/canReconnectTarget.1"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CTransition/canReconnectTarget.1/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CTransition/reconnectTarget.1"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CTransition/reconnectTarget.1/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CTransition/canReconnectTarget.2"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CTransition/canReconnectTarget.2/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CTransition/reconnectTarget.2"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CTransition/reconnectTarget.2/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CTransition/canReconnectTarget.3"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CTransition/canReconnectTarget.3/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CTransition/reconnectTarget.3"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CTransition/reconnectTarget.3/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CTransition/addBendpoint"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CTransition/addBendpoint/x"/>
+        </genParameters>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CTransition/addBendpoint/y"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CTransition/delete"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CTransition/canDelete"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CTransition/highlight"/>
+      </genOperations>
+    </genClasses>
+    <genClasses>
+      <ecoreClass href="CMeinEditor.ecore#//CLabeledTransition"/>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CLabeledTransition/update"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CLabeledTransition/getLabel"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CLabeledTransition/setLabel"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/setLabel/arg"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CLabeledTransition/canReconnectSource"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/canReconnectSource/source"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CLabeledTransition/reconnectSource"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/reconnectSource/source"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CLabeledTransition/canReconnectSource.1"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/canReconnectSource.1/source"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CLabeledTransition/reconnectSource.1"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/reconnectSource.1/source"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CLabeledTransition/canReconnectSource.2"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/canReconnectSource.2/source"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CLabeledTransition/reconnectSource.2"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/reconnectSource.2/source"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CLabeledTransition/canReconnectSource.3"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/canReconnectSource.3/source"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CLabeledTransition/reconnectSource.3"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/reconnectSource.3/source"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CLabeledTransition/canReconnectTarget"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/canReconnectTarget/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CLabeledTransition/reconnectTarget"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/reconnectTarget/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CLabeledTransition/canReconnectTarget.1"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/canReconnectTarget.1/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CLabeledTransition/reconnectTarget.1"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/reconnectTarget.1/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CLabeledTransition/canReconnectTarget.2"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/canReconnectTarget.2/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CLabeledTransition/reconnectTarget.2"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/reconnectTarget.2/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CLabeledTransition/canReconnectTarget.3"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/canReconnectTarget.3/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CLabeledTransition/reconnectTarget.3"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/reconnectTarget.3/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CLabeledTransition/canClone"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/canClone/source"/>
+        </genParameters>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/canClone/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CLabeledTransition/clone"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/clone/source"/>
+        </genParameters>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/clone/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CLabeledTransition/canClone.1"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/canClone.1/source"/>
+        </genParameters>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/canClone.1/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CLabeledTransition/clone.1"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/clone.1/source"/>
+        </genParameters>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/clone.1/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CLabeledTransition/canClone.2"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/canClone.2/source"/>
+        </genParameters>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/canClone.2/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CLabeledTransition/clone.2"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/clone.2/source"/>
+        </genParameters>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/clone.2/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CLabeledTransition/canClone.3"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/canClone.3/source"/>
+        </genParameters>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/canClone.3/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CLabeledTransition/clone.3"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/clone.3/source"/>
+        </genParameters>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/clone.3/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CLabeledTransition/canClone.4"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/canClone.4/source"/>
+        </genParameters>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/canClone.4/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CLabeledTransition/clone.4"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/clone.4/source"/>
+        </genParameters>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/clone.4/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CLabeledTransition/canClone.5"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/canClone.5/source"/>
+        </genParameters>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/canClone.5/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CLabeledTransition/clone.5"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/clone.5/source"/>
+        </genParameters>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/clone.5/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CLabeledTransition/canClone.6"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/canClone.6/source"/>
+        </genParameters>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/canClone.6/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CLabeledTransition/clone.6"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/clone.6/source"/>
+        </genParameters>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/clone.6/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CLabeledTransition/canClone.7"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/canClone.7/source"/>
+        </genParameters>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/canClone.7/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CLabeledTransition/clone.7"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/clone.7/source"/>
+        </genParameters>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/clone.7/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CLabeledTransition/canClone.8"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/canClone.8/source"/>
+        </genParameters>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/canClone.8/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CLabeledTransition/clone.8"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/clone.8/source"/>
+        </genParameters>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/clone.8/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CLabeledTransition/canClone.9"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/canClone.9/source"/>
+        </genParameters>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/canClone.9/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CLabeledTransition/clone.9"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/clone.9/source"/>
+        </genParameters>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/clone.9/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CLabeledTransition/canClone.10"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/canClone.10/source"/>
+        </genParameters>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/canClone.10/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CLabeledTransition/clone.10"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/clone.10/source"/>
+        </genParameters>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/clone.10/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CLabeledTransition/canClone.11"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/canClone.11/source"/>
+        </genParameters>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/canClone.11/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CLabeledTransition/clone.11"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/clone.11/source"/>
+        </genParameters>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/clone.11/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CLabeledTransition/canClone.12"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/canClone.12/source"/>
+        </genParameters>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/canClone.12/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CLabeledTransition/clone.12"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/clone.12/source"/>
+        </genParameters>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/clone.12/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CLabeledTransition/canClone.13"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/canClone.13/source"/>
+        </genParameters>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/canClone.13/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CLabeledTransition/clone.13"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/clone.13/source"/>
+        </genParameters>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/clone.13/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CLabeledTransition/canClone.14"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/canClone.14/source"/>
+        </genParameters>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/canClone.14/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CLabeledTransition/clone.14"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/clone.14/source"/>
+        </genParameters>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/clone.14/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CLabeledTransition/canClone.15"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/canClone.15/source"/>
+        </genParameters>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/canClone.15/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CLabeledTransition/clone.15"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/clone.15/source"/>
+        </genParameters>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/clone.15/target"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CLabeledTransition/addBendpoint"/>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/addBendpoint/x"/>
+        </genParameters>
+        <genParameters>
+          <ecoreParameter href="CMeinEditor.ecore#//CLabeledTransition/addBendpoint/y"/>
+        </genParameters>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CLabeledTransition/delete"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CLabeledTransition/canDelete"/>
+      </genOperations>
+      <genOperations>
+        <ecoreOperation href="CMeinEditor.ecore#//CLabeledTransition/highlight"/>
+      </genOperations>
+    </genClasses>
+  </genPackages>
+  <usedGenPackages href="file:/Users/liyong/Desktop/cinco-0.7/cinco.app/Contents/MacOS/workspace/grafikeditor/src-gen/model/MeinEditor.genmodel#//meineditor"/>
+  <usedGenPackages href="platform:/plugin/de.jabc.cinco.meta.core.ge.style.model/model/GraphicalGraphModel.genmodel#//graphicalgraphmodel"/>
+</genmodel:GenModel>

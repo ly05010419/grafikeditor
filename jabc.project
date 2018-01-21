@@ -1,0 +1,13 @@
+#Saving jABC Project
+#Sun Jan 14 18:59:47 CET 2018
+jabc.project.definition=1.0
+transem.codegenerator.targetDir=src-gen/
+jabc.project.name=MeinEditor
+jabc.project.sibpath.0=<classpath>
+transem.codegenerator.sourceDir=slg/
+jabc.project.classpath.0=/bin/
+transem.SIBDir=slg-gen/
+transem.qualified.package=grafikeditor.meineditor.MeineditorPackage
+ID=6ab940f8-6f9a-4eb2-9986-fe9647518e9d
+transem.other.ePackage.1=org.eclipse.graphiti.mm.pictograms.impl.PictogramsPackageImpl
+transem.other.ePackage.0=org.eclipse.graphiti.mm.algorithms.impl.AlgorithmsPackageImpl

@@ -1,0 +1,3 @@
+cincoProduct MeinEditorTool {
+	mgl "model/MeinEditor.mgl"
+}		

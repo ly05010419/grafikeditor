@@ -1,0 +1,59 @@
+@style("model/MeinEditor.style")
+@contextMenuAction("pruefung.Korrektheischeck")
+@generatable("generation.Generator","/src-gen/")
+graphModel MeinEditor {
+	package grafikeditor
+	nsURI "http://cinco.scce.info/product/meineditor"
+	diagramExtension "meineditor"
+	
+	attr EString as modelName
+	
+	@style(startStyle)
+	@icon("icons/Start.png")
+	node Start {
+		attr EString as name
+		outgoingEdges (LabeledTransition[1,1]) 
+	}	
+	
+	@style(stopStyle) 
+	@icon("icons/Stop.png")
+	node End{
+		incomingEdges ({Transition,LabeledTransition}[1,*])
+	}
+	
+	@style(terminalCircle, "${name}")
+	@icon("icons/Circle.png")
+	node Terminal {		
+		attr EString as name
+		incomingEdges (*[1,*])
+		outgoingEdges (LabeledTransition[1,*])
+	}
+	
+	@style(textRectangle, "${name}")
+	@icon("icons/Rectangle.png")
+	node Variable {		
+		attr EString as name
+		incomingEdges (*[1,*])
+		outgoingEdges (LabeledTransition[1,*])
+	}
+	
+	
+	@style(gateway)
+	@icon("icons/Gateway.png")
+	node Gateway {
+		attr EString as name		
+		incomingEdges (*[1,*])
+		outgoingEdges (LabeledTransition[1,*])
+	}
+	
+	
+	@style(simpleArrow)
+	edge Transition { 
+	}
+	
+	@style(labeledArrow, "${label}")
+	edge LabeledTransition {
+		attr EString as label
+	}
+}
+
