@@ -82,11 +82,6 @@ public class ReconnectTransitionFeature extends DefaultReconnectionFeature{
 	}
 
 	private boolean checkTarget(Object target){
-		if (target instanceof grafikeditor.meineditor.Variable) {
-			if (true)
-				return true;
-			else setError(ECincoError.MAX_IN);
-		}
 		if (target instanceof grafikeditor.meineditor.Terminal) {
 			if (true)
 				return true;
@@ -98,6 +93,11 @@ public class ReconnectTransitionFeature extends DefaultReconnectionFeature{
 			else setError(ECincoError.MAX_IN);
 		}
 		if (target instanceof grafikeditor.meineditor.End) {
+			if (true)
+				return true;
+			else setError(ECincoError.MAX_IN);
+		}
+		if (target instanceof grafikeditor.meineditor.Variable) {
 			if (true)
 				return true;
 			else setError(ECincoError.MAX_IN);

@@ -413,13 +413,13 @@
         <ecoreOperation href="CMeinEditor.ecore#//CEnd/update"/>
       </genOperations>
       <genOperations>
-        <ecoreOperation href="CMeinEditor.ecore#//CEnd/getTerminalPredecessors"/>
+        <ecoreOperation href="CMeinEditor.ecore#//CEnd/getStartPredecessors"/>
       </genOperations>
       <genOperations>
         <ecoreOperation href="CMeinEditor.ecore#//CEnd/getGatewayPredecessors"/>
       </genOperations>
       <genOperations>
-        <ecoreOperation href="CMeinEditor.ecore#//CEnd/getStartPredecessors"/>
+        <ecoreOperation href="CMeinEditor.ecore#//CEnd/getTerminalPredecessors"/>
       </genOperations>
       <genOperations>
         <ecoreOperation href="CMeinEditor.ecore#//CEnd/getVariablePredecessors"/>
@@ -491,13 +491,13 @@
         </genParameters>
       </genOperations>
       <genOperations>
-        <ecoreOperation href="CMeinEditor.ecore#//CTerminal/getTerminalPredecessors"/>
+        <ecoreOperation href="CMeinEditor.ecore#//CTerminal/getStartPredecessors"/>
       </genOperations>
       <genOperations>
         <ecoreOperation href="CMeinEditor.ecore#//CTerminal/getGatewayPredecessors"/>
       </genOperations>
       <genOperations>
-        <ecoreOperation href="CMeinEditor.ecore#//CTerminal/getStartPredecessors"/>
+        <ecoreOperation href="CMeinEditor.ecore#//CTerminal/getTerminalPredecessors"/>
       </genOperations>
       <genOperations>
         <ecoreOperation href="CMeinEditor.ecore#//CTerminal/getVariablePredecessors"/>
@@ -629,13 +629,13 @@
         </genParameters>
       </genOperations>
       <genOperations>
-        <ecoreOperation href="CMeinEditor.ecore#//CVariable/getTerminalPredecessors"/>
+        <ecoreOperation href="CMeinEditor.ecore#//CVariable/getStartPredecessors"/>
       </genOperations>
       <genOperations>
         <ecoreOperation href="CMeinEditor.ecore#//CVariable/getGatewayPredecessors"/>
       </genOperations>
       <genOperations>
-        <ecoreOperation href="CMeinEditor.ecore#//CVariable/getStartPredecessors"/>
+        <ecoreOperation href="CMeinEditor.ecore#//CVariable/getTerminalPredecessors"/>
       </genOperations>
       <genOperations>
         <ecoreOperation href="CMeinEditor.ecore#//CVariable/getVariablePredecessors"/>
@@ -767,13 +767,13 @@
         </genParameters>
       </genOperations>
       <genOperations>
-        <ecoreOperation href="CMeinEditor.ecore#//CGateway/getTerminalPredecessors"/>
+        <ecoreOperation href="CMeinEditor.ecore#//CGateway/getStartPredecessors"/>
       </genOperations>
       <genOperations>
         <ecoreOperation href="CMeinEditor.ecore#//CGateway/getGatewayPredecessors"/>
       </genOperations>
       <genOperations>
-        <ecoreOperation href="CMeinEditor.ecore#//CGateway/getStartPredecessors"/>
+        <ecoreOperation href="CMeinEditor.ecore#//CGateway/getTerminalPredecessors"/>
       </genOperations>
       <genOperations>
         <ecoreOperation href="CMeinEditor.ecore#//CGateway/getVariablePredecessors"/>

@@ -428,13 +428,13 @@ public class MeineditorPackageImpl extends EPackageImpl implements MeineditorPac
 
 		addEOperation(endEClass, theGraphmodelPackage.getConnectionConstraint(), "getIncomingConstraints", 0, -1, IS_UNIQUE, IS_ORDERED);
 
-		addEOperation(endEClass, this.getStart(), "getStartPredecessors", 0, -1, IS_UNIQUE, IS_ORDERED);
-
 		addEOperation(endEClass, this.getTerminal(), "getTerminalPredecessors", 0, -1, IS_UNIQUE, IS_ORDERED);
 
-		addEOperation(endEClass, this.getGateway(), "getGatewayPredecessors", 0, -1, IS_UNIQUE, IS_ORDERED);
+		addEOperation(endEClass, this.getStart(), "getStartPredecessors", 0, -1, IS_UNIQUE, IS_ORDERED);
 
 		addEOperation(endEClass, this.getVariable(), "getVariablePredecessors", 0, -1, IS_UNIQUE, IS_ORDERED);
+
+		addEOperation(endEClass, this.getGateway(), "getGatewayPredecessors", 0, -1, IS_UNIQUE, IS_ORDERED);
 
 		addEOperation(endEClass, theGraphmodelPackage.getNode(), "getPredecessors", 0, -1, IS_UNIQUE, IS_ORDERED);
 
@@ -447,13 +447,13 @@ public class MeineditorPackageImpl extends EPackageImpl implements MeineditorPac
 
 		addEOperation(terminalEClass, theGraphmodelPackage.getConnectionConstraint(), "getOutgoingConstraints", 0, -1, IS_UNIQUE, IS_ORDERED);
 
-		addEOperation(terminalEClass, this.getStart(), "getStartPredecessors", 0, -1, IS_UNIQUE, IS_ORDERED);
-
 		addEOperation(terminalEClass, this.getTerminal(), "getTerminalPredecessors", 0, -1, IS_UNIQUE, IS_ORDERED);
 
-		addEOperation(terminalEClass, this.getGateway(), "getGatewayPredecessors", 0, -1, IS_UNIQUE, IS_ORDERED);
+		addEOperation(terminalEClass, this.getStart(), "getStartPredecessors", 0, -1, IS_UNIQUE, IS_ORDERED);
 
 		addEOperation(terminalEClass, this.getVariable(), "getVariablePredecessors", 0, -1, IS_UNIQUE, IS_ORDERED);
+
+		addEOperation(terminalEClass, this.getGateway(), "getGatewayPredecessors", 0, -1, IS_UNIQUE, IS_ORDERED);
 
 		addEOperation(terminalEClass, theGraphmodelPackage.getNode(), "getPredecessors", 0, -1, IS_UNIQUE, IS_ORDERED);
 
@@ -476,13 +476,13 @@ public class MeineditorPackageImpl extends EPackageImpl implements MeineditorPac
 
 		addEOperation(variableEClass, theGraphmodelPackage.getConnectionConstraint(), "getOutgoingConstraints", 0, -1, IS_UNIQUE, IS_ORDERED);
 
-		addEOperation(variableEClass, this.getStart(), "getStartPredecessors", 0, -1, IS_UNIQUE, IS_ORDERED);
-
 		addEOperation(variableEClass, this.getTerminal(), "getTerminalPredecessors", 0, -1, IS_UNIQUE, IS_ORDERED);
 
-		addEOperation(variableEClass, this.getGateway(), "getGatewayPredecessors", 0, -1, IS_UNIQUE, IS_ORDERED);
+		addEOperation(variableEClass, this.getStart(), "getStartPredecessors", 0, -1, IS_UNIQUE, IS_ORDERED);
 
 		addEOperation(variableEClass, this.getVariable(), "getVariablePredecessors", 0, -1, IS_UNIQUE, IS_ORDERED);
+
+		addEOperation(variableEClass, this.getGateway(), "getGatewayPredecessors", 0, -1, IS_UNIQUE, IS_ORDERED);
 
 		addEOperation(variableEClass, theGraphmodelPackage.getNode(), "getPredecessors", 0, -1, IS_UNIQUE, IS_ORDERED);
 
@@ -505,13 +505,13 @@ public class MeineditorPackageImpl extends EPackageImpl implements MeineditorPac
 
 		addEOperation(gatewayEClass, theGraphmodelPackage.getConnectionConstraint(), "getOutgoingConstraints", 0, -1, IS_UNIQUE, IS_ORDERED);
 
-		addEOperation(gatewayEClass, this.getStart(), "getStartPredecessors", 0, -1, IS_UNIQUE, IS_ORDERED);
-
 		addEOperation(gatewayEClass, this.getTerminal(), "getTerminalPredecessors", 0, -1, IS_UNIQUE, IS_ORDERED);
 
-		addEOperation(gatewayEClass, this.getGateway(), "getGatewayPredecessors", 0, -1, IS_UNIQUE, IS_ORDERED);
+		addEOperation(gatewayEClass, this.getStart(), "getStartPredecessors", 0, -1, IS_UNIQUE, IS_ORDERED);
 
 		addEOperation(gatewayEClass, this.getVariable(), "getVariablePredecessors", 0, -1, IS_UNIQUE, IS_ORDERED);
+
+		addEOperation(gatewayEClass, this.getGateway(), "getGatewayPredecessors", 0, -1, IS_UNIQUE, IS_ORDERED);
 
 		addEOperation(gatewayEClass, theGraphmodelPackage.getNode(), "getPredecessors", 0, -1, IS_UNIQUE, IS_ORDERED);
 

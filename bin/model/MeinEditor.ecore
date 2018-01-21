@@ -110,24 +110,24 @@
         <details key="body" value="ConnectionConstraint incomingConstraint0 = new ConnectionConstraint(false,1,-1,grafikeditor.meineditor.Transition.class,grafikeditor.meineditor.LabeledTransition.class);&#xA;&#xA;return new org.eclipse.emf.common.util.BasicEList&lt;ConnectionConstraint>(java.util.Arrays.asList(incomingConstraint0));&#xA;"/>
       </eAnnotations>
     </eOperations>
-    <eOperations name="getStartPredecessors" upperBound="-1" eType="#//Start">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="body" value="&#xA;&#xA;return getPredecessors(grafikeditor.meineditor.Start.class);"/>
-      </eAnnotations>
-    </eOperations>
     <eOperations name="getTerminalPredecessors" upperBound="-1" eType="#//Terminal">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="body" value="&#xA;&#xA;return getPredecessors(grafikeditor.meineditor.Terminal.class);"/>
       </eAnnotations>
     </eOperations>
-    <eOperations name="getGatewayPredecessors" upperBound="-1" eType="#//Gateway">
+    <eOperations name="getStartPredecessors" upperBound="-1" eType="#//Start">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="body" value="&#xA;&#xA;return getPredecessors(grafikeditor.meineditor.Gateway.class);"/>
+        <details key="body" value="&#xA;&#xA;return getPredecessors(grafikeditor.meineditor.Start.class);"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getVariablePredecessors" upperBound="-1" eType="#//Variable">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="body" value="&#xA;&#xA;return getPredecessors(grafikeditor.meineditor.Variable.class);"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="getGatewayPredecessors" upperBound="-1" eType="#//Gateway">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="&#xA;&#xA;return getPredecessors(grafikeditor.meineditor.Gateway.class);"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getPredecessors" upperBound="-1" eType="ecore:EClass http://www.jabc.de/cinco/gdl/graphmodel#//Node">
@@ -159,24 +159,24 @@
         <details key="body" value="ConnectionConstraint outgoingConstraint0 = new ConnectionConstraint(true,1,-1,grafikeditor.meineditor.LabeledTransition.class);&#xA;&#xA;return new org.eclipse.emf.common.util.BasicEList&lt;ConnectionConstraint>(java.util.Arrays.asList(outgoingConstraint0));&#xA;"/>
       </eAnnotations>
     </eOperations>
-    <eOperations name="getStartPredecessors" upperBound="-1" eType="#//Start">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="body" value="&#xA;&#xA;return getPredecessors(grafikeditor.meineditor.Start.class);"/>
-      </eAnnotations>
-    </eOperations>
     <eOperations name="getTerminalPredecessors" upperBound="-1" eType="#//Terminal">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="body" value="&#xA;&#xA;return getPredecessors(grafikeditor.meineditor.Terminal.class);"/>
       </eAnnotations>
     </eOperations>
-    <eOperations name="getGatewayPredecessors" upperBound="-1" eType="#//Gateway">
+    <eOperations name="getStartPredecessors" upperBound="-1" eType="#//Start">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="body" value="&#xA;&#xA;return getPredecessors(grafikeditor.meineditor.Gateway.class);"/>
+        <details key="body" value="&#xA;&#xA;return getPredecessors(grafikeditor.meineditor.Start.class);"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getVariablePredecessors" upperBound="-1" eType="#//Variable">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="body" value="&#xA;&#xA;return getPredecessors(grafikeditor.meineditor.Variable.class);"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="getGatewayPredecessors" upperBound="-1" eType="#//Gateway">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="&#xA;&#xA;return getPredecessors(grafikeditor.meineditor.Gateway.class);"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getPredecessors" upperBound="-1" eType="ecore:EClass http://www.jabc.de/cinco/gdl/graphmodel#//Node">
@@ -234,24 +234,24 @@
         <details key="body" value="ConnectionConstraint outgoingConstraint0 = new ConnectionConstraint(true,1,-1,grafikeditor.meineditor.LabeledTransition.class);&#xA;&#xA;return new org.eclipse.emf.common.util.BasicEList&lt;ConnectionConstraint>(java.util.Arrays.asList(outgoingConstraint0));&#xA;"/>
       </eAnnotations>
     </eOperations>
-    <eOperations name="getStartPredecessors" upperBound="-1" eType="#//Start">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="body" value="&#xA;&#xA;return getPredecessors(grafikeditor.meineditor.Start.class);"/>
-      </eAnnotations>
-    </eOperations>
     <eOperations name="getTerminalPredecessors" upperBound="-1" eType="#//Terminal">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="body" value="&#xA;&#xA;return getPredecessors(grafikeditor.meineditor.Terminal.class);"/>
       </eAnnotations>
     </eOperations>
-    <eOperations name="getGatewayPredecessors" upperBound="-1" eType="#//Gateway">
+    <eOperations name="getStartPredecessors" upperBound="-1" eType="#//Start">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="body" value="&#xA;&#xA;return getPredecessors(grafikeditor.meineditor.Gateway.class);"/>
+        <details key="body" value="&#xA;&#xA;return getPredecessors(grafikeditor.meineditor.Start.class);"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getVariablePredecessors" upperBound="-1" eType="#//Variable">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="body" value="&#xA;&#xA;return getPredecessors(grafikeditor.meineditor.Variable.class);"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="getGatewayPredecessors" upperBound="-1" eType="#//Gateway">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="&#xA;&#xA;return getPredecessors(grafikeditor.meineditor.Gateway.class);"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getPredecessors" upperBound="-1" eType="ecore:EClass http://www.jabc.de/cinco/gdl/graphmodel#//Node">
@@ -309,24 +309,24 @@
         <details key="body" value="ConnectionConstraint outgoingConstraint0 = new ConnectionConstraint(true,1,-1,grafikeditor.meineditor.LabeledTransition.class);&#xA;&#xA;return new org.eclipse.emf.common.util.BasicEList&lt;ConnectionConstraint>(java.util.Arrays.asList(outgoingConstraint0));&#xA;"/>
       </eAnnotations>
     </eOperations>
-    <eOperations name="getStartPredecessors" upperBound="-1" eType="#//Start">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="body" value="&#xA;&#xA;return getPredecessors(grafikeditor.meineditor.Start.class);"/>
-      </eAnnotations>
-    </eOperations>
     <eOperations name="getTerminalPredecessors" upperBound="-1" eType="#//Terminal">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="body" value="&#xA;&#xA;return getPredecessors(grafikeditor.meineditor.Terminal.class);"/>
       </eAnnotations>
     </eOperations>
-    <eOperations name="getGatewayPredecessors" upperBound="-1" eType="#//Gateway">
+    <eOperations name="getStartPredecessors" upperBound="-1" eType="#//Start">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="body" value="&#xA;&#xA;return getPredecessors(grafikeditor.meineditor.Gateway.class);"/>
+        <details key="body" value="&#xA;&#xA;return getPredecessors(grafikeditor.meineditor.Start.class);"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getVariablePredecessors" upperBound="-1" eType="#//Variable">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="body" value="&#xA;&#xA;return getPredecessors(grafikeditor.meineditor.Variable.class);"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="getGatewayPredecessors" upperBound="-1" eType="#//Gateway">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="&#xA;&#xA;return getPredecessors(grafikeditor.meineditor.Gateway.class);"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="getPredecessors" upperBound="-1" eType="ecore:EClass http://www.jabc.de/cinco/gdl/graphmodel#//Node">

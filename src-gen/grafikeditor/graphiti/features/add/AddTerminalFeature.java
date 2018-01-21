@@ -65,7 +65,7 @@ public class AddTerminalFeature extends CincoAbstractAddFeature {
 
 		gaService.setSize(ellipse0, 36, 36);
 
-		MeinEditorLayoutUtils.set_Appearance24Style(ellipse0, getDiagram());
+		MeinEditorLayoutUtils.set_Appearance0Style(ellipse0, getDiagram());
 		if (context.getWidth() < 0 && context.getHeight() < 0) {
 			gaService.setLocation(ellipse0, context.getX() + 0, context.getY() + 0);
 		} else {

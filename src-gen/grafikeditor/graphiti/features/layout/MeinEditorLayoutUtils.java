@@ -203,7 +203,7 @@ public class MeinEditorLayoutUtils {
 		ga.setLineVisible(!false);
 		
 	}
-	public static void set_Appearance24Style(GraphicsAlgorithm ga, Diagram diagram) {
+	public static void set_Appearance0Style(GraphicsAlgorithm ga, Diagram diagram) {
 		if (ga instanceof AbstractText) {
 			((AbstractText) ga).setRotation(0.0);
 			((AbstractText) ga).setFont(gaService.manageFont(diagram, "Arial", 8, false, false));
@@ -217,7 +217,7 @@ public class MeinEditorLayoutUtils {
 		ga.setLineVisible(!false);
 		
 	}
-	public static void set_Appearance25Style(GraphicsAlgorithm ga, Diagram diagram) {
+	public static void set_Appearance1Style(GraphicsAlgorithm ga, Diagram diagram) {
 		if (ga instanceof AbstractText) {
 			((AbstractText) ga).setRotation(0.0);
 			((AbstractText) ga).setFont(gaService.manageFont(diagram, "Arial", 8, false, false));
@@ -231,7 +231,7 @@ public class MeinEditorLayoutUtils {
 		ga.setLineVisible(!false);
 		
 	}
-	public static void set_Appearance26Style(GraphicsAlgorithm ga, Diagram diagram) {
+	public static void set_Appearance2Style(GraphicsAlgorithm ga, Diagram diagram) {
 		if (ga instanceof AbstractText) {
 			((AbstractText) ga).setRotation(0.0);
 			((AbstractText) ga).setFont(gaService.manageFont(diagram, "Arial", 8, false, false));

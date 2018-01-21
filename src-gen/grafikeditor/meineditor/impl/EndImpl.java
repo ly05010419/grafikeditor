@@ -125,17 +125,6 @@ public class EndImpl extends ModelElementImpl implements End {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Start> getStartPredecessors() {
-		
-		
-		return getPredecessors(grafikeditor.meineditor.Start.class);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EList<Terminal> getTerminalPredecessors() {
 		
 		
@@ -147,10 +136,10 @@ public class EndImpl extends ModelElementImpl implements End {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Gateway> getGatewayPredecessors() {
+	public EList<Start> getStartPredecessors() {
 		
 		
-		return getPredecessors(grafikeditor.meineditor.Gateway.class);
+		return getPredecessors(grafikeditor.meineditor.Start.class);
 	}
 
 	/**
@@ -162,6 +151,17 @@ public class EndImpl extends ModelElementImpl implements End {
 		
 		
 		return getPredecessors(grafikeditor.meineditor.Variable.class);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<Gateway> getGatewayPredecessors() {
+		
+		
+		return getPredecessors(grafikeditor.meineditor.Gateway.class);
 	}
 
 	/**

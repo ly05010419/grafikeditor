@@ -95,10 +95,10 @@ public class CTerminalImpl extends CNodeImpl implements CTerminal {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<CTerminal> getTerminalPredecessors() {
+	public EList<CStart> getStartPredecessors() {
 		
 		
-		return getPredecessors(CTerminal.class);
+		return getPredecessors(CStart.class);
 	}
 
 	/**
@@ -117,10 +117,10 @@ public class CTerminalImpl extends CNodeImpl implements CTerminal {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<CStart> getStartPredecessors() {
+	public EList<CTerminal> getTerminalPredecessors() {
 		
 		
-		return getPredecessors(CStart.class);
+		return getPredecessors(CTerminal.class);
 	}
 
 	/**

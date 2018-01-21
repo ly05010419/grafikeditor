@@ -30,10 +30,10 @@
     </genClasses>
     <genClasses ecoreClass="platform:/resource/grafikeditor/src-gen/model/MeinEditor.ecore#//End">
       <genOperations ecoreOperation="platform:/resource/grafikeditor/src-gen/model/MeinEditor.ecore#//End/getIncomingConstraints"/>
-      <genOperations ecoreOperation="platform:/resource/grafikeditor/src-gen/model/MeinEditor.ecore#//End/getStartPredecessors"/>
       <genOperations ecoreOperation="platform:/resource/grafikeditor/src-gen/model/MeinEditor.ecore#//End/getTerminalPredecessors"/>
-      <genOperations ecoreOperation="platform:/resource/grafikeditor/src-gen/model/MeinEditor.ecore#//End/getGatewayPredecessors"/>
+      <genOperations ecoreOperation="platform:/resource/grafikeditor/src-gen/model/MeinEditor.ecore#//End/getStartPredecessors"/>
       <genOperations ecoreOperation="platform:/resource/grafikeditor/src-gen/model/MeinEditor.ecore#//End/getVariablePredecessors"/>
+      <genOperations ecoreOperation="platform:/resource/grafikeditor/src-gen/model/MeinEditor.ecore#//End/getGatewayPredecessors"/>
       <genOperations ecoreOperation="platform:/resource/grafikeditor/src-gen/model/MeinEditor.ecore#//End/getPredecessors"/>
       <genOperations ecoreOperation="platform:/resource/grafikeditor/src-gen/model/MeinEditor.ecore#//End/getRootElement"/>
     </genClasses>
@@ -41,10 +41,10 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/resource/grafikeditor/src-gen/model/MeinEditor.ecore#//Terminal/name"/>
       <genOperations ecoreOperation="platform:/resource/grafikeditor/src-gen/model/MeinEditor.ecore#//Terminal/getIncomingConstraints"/>
       <genOperations ecoreOperation="platform:/resource/grafikeditor/src-gen/model/MeinEditor.ecore#//Terminal/getOutgoingConstraints"/>
-      <genOperations ecoreOperation="platform:/resource/grafikeditor/src-gen/model/MeinEditor.ecore#//Terminal/getStartPredecessors"/>
       <genOperations ecoreOperation="platform:/resource/grafikeditor/src-gen/model/MeinEditor.ecore#//Terminal/getTerminalPredecessors"/>
-      <genOperations ecoreOperation="platform:/resource/grafikeditor/src-gen/model/MeinEditor.ecore#//Terminal/getGatewayPredecessors"/>
+      <genOperations ecoreOperation="platform:/resource/grafikeditor/src-gen/model/MeinEditor.ecore#//Terminal/getStartPredecessors"/>
       <genOperations ecoreOperation="platform:/resource/grafikeditor/src-gen/model/MeinEditor.ecore#//Terminal/getVariablePredecessors"/>
+      <genOperations ecoreOperation="platform:/resource/grafikeditor/src-gen/model/MeinEditor.ecore#//Terminal/getGatewayPredecessors"/>
       <genOperations ecoreOperation="platform:/resource/grafikeditor/src-gen/model/MeinEditor.ecore#//Terminal/getPredecessors"/>
       <genOperations ecoreOperation="platform:/resource/grafikeditor/src-gen/model/MeinEditor.ecore#//Terminal/getEndSuccessors"/>
       <genOperations ecoreOperation="platform:/resource/grafikeditor/src-gen/model/MeinEditor.ecore#//Terminal/getTerminalSuccessors"/>
@@ -57,10 +57,10 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/resource/grafikeditor/src-gen/model/MeinEditor.ecore#//Variable/name"/>
       <genOperations ecoreOperation="platform:/resource/grafikeditor/src-gen/model/MeinEditor.ecore#//Variable/getIncomingConstraints"/>
       <genOperations ecoreOperation="platform:/resource/grafikeditor/src-gen/model/MeinEditor.ecore#//Variable/getOutgoingConstraints"/>
-      <genOperations ecoreOperation="platform:/resource/grafikeditor/src-gen/model/MeinEditor.ecore#//Variable/getStartPredecessors"/>
       <genOperations ecoreOperation="platform:/resource/grafikeditor/src-gen/model/MeinEditor.ecore#//Variable/getTerminalPredecessors"/>
-      <genOperations ecoreOperation="platform:/resource/grafikeditor/src-gen/model/MeinEditor.ecore#//Variable/getGatewayPredecessors"/>
+      <genOperations ecoreOperation="platform:/resource/grafikeditor/src-gen/model/MeinEditor.ecore#//Variable/getStartPredecessors"/>
       <genOperations ecoreOperation="platform:/resource/grafikeditor/src-gen/model/MeinEditor.ecore#//Variable/getVariablePredecessors"/>
+      <genOperations ecoreOperation="platform:/resource/grafikeditor/src-gen/model/MeinEditor.ecore#//Variable/getGatewayPredecessors"/>
       <genOperations ecoreOperation="platform:/resource/grafikeditor/src-gen/model/MeinEditor.ecore#//Variable/getPredecessors"/>
       <genOperations ecoreOperation="platform:/resource/grafikeditor/src-gen/model/MeinEditor.ecore#//Variable/getEndSuccessors"/>
       <genOperations ecoreOperation="platform:/resource/grafikeditor/src-gen/model/MeinEditor.ecore#//Variable/getTerminalSuccessors"/>
@@ -73,10 +73,10 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/resource/grafikeditor/src-gen/model/MeinEditor.ecore#//Gateway/name"/>
       <genOperations ecoreOperation="platform:/resource/grafikeditor/src-gen/model/MeinEditor.ecore#//Gateway/getIncomingConstraints"/>
       <genOperations ecoreOperation="platform:/resource/grafikeditor/src-gen/model/MeinEditor.ecore#//Gateway/getOutgoingConstraints"/>
-      <genOperations ecoreOperation="platform:/resource/grafikeditor/src-gen/model/MeinEditor.ecore#//Gateway/getStartPredecessors"/>
       <genOperations ecoreOperation="platform:/resource/grafikeditor/src-gen/model/MeinEditor.ecore#//Gateway/getTerminalPredecessors"/>
-      <genOperations ecoreOperation="platform:/resource/grafikeditor/src-gen/model/MeinEditor.ecore#//Gateway/getGatewayPredecessors"/>
+      <genOperations ecoreOperation="platform:/resource/grafikeditor/src-gen/model/MeinEditor.ecore#//Gateway/getStartPredecessors"/>
       <genOperations ecoreOperation="platform:/resource/grafikeditor/src-gen/model/MeinEditor.ecore#//Gateway/getVariablePredecessors"/>
+      <genOperations ecoreOperation="platform:/resource/grafikeditor/src-gen/model/MeinEditor.ecore#//Gateway/getGatewayPredecessors"/>
       <genOperations ecoreOperation="platform:/resource/grafikeditor/src-gen/model/MeinEditor.ecore#//Gateway/getPredecessors"/>
       <genOperations ecoreOperation="platform:/resource/grafikeditor/src-gen/model/MeinEditor.ecore#//Gateway/getEndSuccessors"/>
       <genOperations ecoreOperation="platform:/resource/grafikeditor/src-gen/model/MeinEditor.ecore#//Gateway/getTerminalSuccessors"/>

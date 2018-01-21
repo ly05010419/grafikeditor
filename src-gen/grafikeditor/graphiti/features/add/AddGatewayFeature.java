@@ -105,7 +105,7 @@ public class AddGatewayFeature extends CincoAbstractAddFeature {
 		else peService.setPropertyValue(polygon0, MeinEditorLayoutUtils.KEY_INITIAL_PARENT_SIZE, "" + Shape0.getGraphicsAlgorithm().getWidth() + "," + Shape0.getGraphicsAlgorithm().getHeight()); 
 
 
-		MeinEditorLayoutUtils.set_Appearance25Style(polygon0, getDiagram());
+		MeinEditorLayoutUtils.set_Appearance1Style(polygon0, getDiagram());
 		if (context.getWidth() < 0 && context.getHeight() < 0) {
 			gaService.setLocation(polygon0, context.getX() + 0, context.getY() + 0);
 		} else {

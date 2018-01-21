@@ -548,11 +548,11 @@ public class CmeineditorPackageImpl extends EPackageImpl implements CmeineditorP
 
 		addEOperation(cEndEClass, null, "update", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		addEOperation(cEndEClass, this.getCTerminal(), "getTerminalPredecessors", 0, -1, IS_UNIQUE, IS_ORDERED);
+		addEOperation(cEndEClass, this.getCStart(), "getStartPredecessors", 0, -1, IS_UNIQUE, IS_ORDERED);
 
 		addEOperation(cEndEClass, this.getCGateway(), "getGatewayPredecessors", 0, -1, IS_UNIQUE, IS_ORDERED);
 
-		addEOperation(cEndEClass, this.getCStart(), "getStartPredecessors", 0, -1, IS_UNIQUE, IS_ORDERED);
+		addEOperation(cEndEClass, this.getCTerminal(), "getTerminalPredecessors", 0, -1, IS_UNIQUE, IS_ORDERED);
 
 		addEOperation(cEndEClass, this.getCVariable(), "getVariablePredecessors", 0, -1, IS_UNIQUE, IS_ORDERED);
 
@@ -591,11 +591,11 @@ public class CmeineditorPackageImpl extends EPackageImpl implements CmeineditorP
 		op = addEOperation(cTerminalEClass, null, "setName", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEString(), "arg", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		addEOperation(cTerminalEClass, this.getCTerminal(), "getTerminalPredecessors", 0, -1, IS_UNIQUE, IS_ORDERED);
+		addEOperation(cTerminalEClass, this.getCStart(), "getStartPredecessors", 0, -1, IS_UNIQUE, IS_ORDERED);
 
 		addEOperation(cTerminalEClass, this.getCGateway(), "getGatewayPredecessors", 0, -1, IS_UNIQUE, IS_ORDERED);
 
-		addEOperation(cTerminalEClass, this.getCStart(), "getStartPredecessors", 0, -1, IS_UNIQUE, IS_ORDERED);
+		addEOperation(cTerminalEClass, this.getCTerminal(), "getTerminalPredecessors", 0, -1, IS_UNIQUE, IS_ORDERED);
 
 		addEOperation(cTerminalEClass, this.getCVariable(), "getVariablePredecessors", 0, -1, IS_UNIQUE, IS_ORDERED);
 
@@ -666,11 +666,11 @@ public class CmeineditorPackageImpl extends EPackageImpl implements CmeineditorP
 		op = addEOperation(cVariableEClass, null, "setName", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEString(), "arg", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		addEOperation(cVariableEClass, this.getCTerminal(), "getTerminalPredecessors", 0, -1, IS_UNIQUE, IS_ORDERED);
+		addEOperation(cVariableEClass, this.getCStart(), "getStartPredecessors", 0, -1, IS_UNIQUE, IS_ORDERED);
 
 		addEOperation(cVariableEClass, this.getCGateway(), "getGatewayPredecessors", 0, -1, IS_UNIQUE, IS_ORDERED);
 
-		addEOperation(cVariableEClass, this.getCStart(), "getStartPredecessors", 0, -1, IS_UNIQUE, IS_ORDERED);
+		addEOperation(cVariableEClass, this.getCTerminal(), "getTerminalPredecessors", 0, -1, IS_UNIQUE, IS_ORDERED);
 
 		addEOperation(cVariableEClass, this.getCVariable(), "getVariablePredecessors", 0, -1, IS_UNIQUE, IS_ORDERED);
 
@@ -741,11 +741,11 @@ public class CmeineditorPackageImpl extends EPackageImpl implements CmeineditorP
 		op = addEOperation(cGatewayEClass, null, "setName", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEString(), "arg", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		addEOperation(cGatewayEClass, this.getCTerminal(), "getTerminalPredecessors", 0, -1, IS_UNIQUE, IS_ORDERED);
+		addEOperation(cGatewayEClass, this.getCStart(), "getStartPredecessors", 0, -1, IS_UNIQUE, IS_ORDERED);
 
 		addEOperation(cGatewayEClass, this.getCGateway(), "getGatewayPredecessors", 0, -1, IS_UNIQUE, IS_ORDERED);
 
-		addEOperation(cGatewayEClass, this.getCStart(), "getStartPredecessors", 0, -1, IS_UNIQUE, IS_ORDERED);
+		addEOperation(cGatewayEClass, this.getCTerminal(), "getTerminalPredecessors", 0, -1, IS_UNIQUE, IS_ORDERED);
 
 		addEOperation(cGatewayEClass, this.getCVariable(), "getVariablePredecessors", 0, -1, IS_UNIQUE, IS_ORDERED);
 
@@ -855,10 +855,10 @@ public class CmeineditorPackageImpl extends EPackageImpl implements CmeineditorP
 		addEParameter(op, ecorePackage.getEString(), "arg", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(cLabeledTransitionEClass, ecorePackage.getEBoolean(), "canReconnectSource", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, this.getCTerminal(), "source", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, this.getCStart(), "source", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(cLabeledTransitionEClass, null, "reconnectSource", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, this.getCTerminal(), "source", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, this.getCStart(), "source", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(cLabeledTransitionEClass, ecorePackage.getEBoolean(), "canReconnectSource", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, this.getCGateway(), "source", 0, 1, IS_UNIQUE, IS_ORDERED);
@@ -867,10 +867,10 @@ public class CmeineditorPackageImpl extends EPackageImpl implements CmeineditorP
 		addEParameter(op, this.getCGateway(), "source", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(cLabeledTransitionEClass, ecorePackage.getEBoolean(), "canReconnectSource", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, this.getCStart(), "source", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, this.getCTerminal(), "source", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(cLabeledTransitionEClass, null, "reconnectSource", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, this.getCStart(), "source", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, this.getCTerminal(), "source", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(cLabeledTransitionEClass, ecorePackage.getEBoolean(), "canReconnectSource", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, this.getCVariable(), "source", 0, 1, IS_UNIQUE, IS_ORDERED);
@@ -903,70 +903,6 @@ public class CmeineditorPackageImpl extends EPackageImpl implements CmeineditorP
 		addEParameter(op, this.getCGateway(), "target", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(cLabeledTransitionEClass, ecorePackage.getEBoolean(), "canClone", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, this.getCTerminal(), "source", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, this.getCEnd(), "target", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(cLabeledTransitionEClass, this.getCLabeledTransition(), "clone", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, this.getCTerminal(), "source", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, this.getCEnd(), "target", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(cLabeledTransitionEClass, ecorePackage.getEBoolean(), "canClone", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, this.getCTerminal(), "source", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, this.getCTerminal(), "target", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(cLabeledTransitionEClass, this.getCLabeledTransition(), "clone", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, this.getCTerminal(), "source", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, this.getCTerminal(), "target", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(cLabeledTransitionEClass, ecorePackage.getEBoolean(), "canClone", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, this.getCTerminal(), "source", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, this.getCVariable(), "target", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(cLabeledTransitionEClass, this.getCLabeledTransition(), "clone", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, this.getCTerminal(), "source", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, this.getCVariable(), "target", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(cLabeledTransitionEClass, ecorePackage.getEBoolean(), "canClone", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, this.getCTerminal(), "source", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, this.getCGateway(), "target", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(cLabeledTransitionEClass, this.getCLabeledTransition(), "clone", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, this.getCTerminal(), "source", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, this.getCGateway(), "target", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(cLabeledTransitionEClass, ecorePackage.getEBoolean(), "canClone", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, this.getCGateway(), "source", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, this.getCEnd(), "target", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(cLabeledTransitionEClass, this.getCLabeledTransition(), "clone", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, this.getCGateway(), "source", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, this.getCEnd(), "target", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(cLabeledTransitionEClass, ecorePackage.getEBoolean(), "canClone", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, this.getCGateway(), "source", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, this.getCTerminal(), "target", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(cLabeledTransitionEClass, this.getCLabeledTransition(), "clone", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, this.getCGateway(), "source", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, this.getCTerminal(), "target", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(cLabeledTransitionEClass, ecorePackage.getEBoolean(), "canClone", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, this.getCGateway(), "source", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, this.getCVariable(), "target", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(cLabeledTransitionEClass, this.getCLabeledTransition(), "clone", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, this.getCGateway(), "source", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, this.getCVariable(), "target", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(cLabeledTransitionEClass, ecorePackage.getEBoolean(), "canClone", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, this.getCGateway(), "source", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, this.getCGateway(), "target", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(cLabeledTransitionEClass, this.getCLabeledTransition(), "clone", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, this.getCGateway(), "source", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, this.getCGateway(), "target", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(cLabeledTransitionEClass, ecorePackage.getEBoolean(), "canClone", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, this.getCStart(), "source", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, this.getCEnd(), "target", 0, 1, IS_UNIQUE, IS_ORDERED);
 
@@ -996,6 +932,70 @@ public class CmeineditorPackageImpl extends EPackageImpl implements CmeineditorP
 
 		op = addEOperation(cLabeledTransitionEClass, this.getCLabeledTransition(), "clone", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, this.getCStart(), "source", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, this.getCGateway(), "target", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(cLabeledTransitionEClass, ecorePackage.getEBoolean(), "canClone", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, this.getCGateway(), "source", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, this.getCEnd(), "target", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(cLabeledTransitionEClass, this.getCLabeledTransition(), "clone", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, this.getCGateway(), "source", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, this.getCEnd(), "target", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(cLabeledTransitionEClass, ecorePackage.getEBoolean(), "canClone", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, this.getCGateway(), "source", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, this.getCTerminal(), "target", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(cLabeledTransitionEClass, this.getCLabeledTransition(), "clone", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, this.getCGateway(), "source", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, this.getCTerminal(), "target", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(cLabeledTransitionEClass, ecorePackage.getEBoolean(), "canClone", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, this.getCGateway(), "source", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, this.getCVariable(), "target", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(cLabeledTransitionEClass, this.getCLabeledTransition(), "clone", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, this.getCGateway(), "source", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, this.getCVariable(), "target", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(cLabeledTransitionEClass, ecorePackage.getEBoolean(), "canClone", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, this.getCGateway(), "source", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, this.getCGateway(), "target", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(cLabeledTransitionEClass, this.getCLabeledTransition(), "clone", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, this.getCGateway(), "source", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, this.getCGateway(), "target", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(cLabeledTransitionEClass, ecorePackage.getEBoolean(), "canClone", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, this.getCTerminal(), "source", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, this.getCEnd(), "target", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(cLabeledTransitionEClass, this.getCLabeledTransition(), "clone", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, this.getCTerminal(), "source", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, this.getCEnd(), "target", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(cLabeledTransitionEClass, ecorePackage.getEBoolean(), "canClone", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, this.getCTerminal(), "source", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, this.getCTerminal(), "target", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(cLabeledTransitionEClass, this.getCLabeledTransition(), "clone", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, this.getCTerminal(), "source", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, this.getCTerminal(), "target", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(cLabeledTransitionEClass, ecorePackage.getEBoolean(), "canClone", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, this.getCTerminal(), "source", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, this.getCVariable(), "target", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(cLabeledTransitionEClass, this.getCLabeledTransition(), "clone", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, this.getCTerminal(), "source", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, this.getCVariable(), "target", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(cLabeledTransitionEClass, ecorePackage.getEBoolean(), "canClone", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, this.getCTerminal(), "source", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, this.getCGateway(), "target", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(cLabeledTransitionEClass, this.getCLabeledTransition(), "clone", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, this.getCTerminal(), "source", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, this.getCGateway(), "target", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(cLabeledTransitionEClass, ecorePackage.getEBoolean(), "canClone", 0, 1, IS_UNIQUE, IS_ORDERED);

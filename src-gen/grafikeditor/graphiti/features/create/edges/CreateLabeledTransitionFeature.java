@@ -95,22 +95,22 @@ public class CreateLabeledTransitionFeature extends AbstractCreateConnectionFeat
 	}
 
 	private boolean checkSource(Object source) {
-		if (source instanceof grafikeditor.meineditor.Start) {
-			if (((grafikeditor.meineditor.Start) source).getOutgoing(grafikeditor.meineditor.LabeledTransition.class).size() < 1)
-				return true;
-			else setError(ECincoError.MAX_OUT);
-		} 
-		if (source instanceof grafikeditor.meineditor.Variable) {
-			if (true)
-				return true;
-			else setError(ECincoError.MAX_OUT);
-		} 
 		if (source instanceof grafikeditor.meineditor.Terminal) {
 			if (true)
 				return true;
 			else setError(ECincoError.MAX_OUT);
 		} 
+		if (source instanceof grafikeditor.meineditor.Start) {
+			if (((grafikeditor.meineditor.Start) source).getOutgoing(grafikeditor.meineditor.LabeledTransition.class).size() < 1)
+				return true;
+			else setError(ECincoError.MAX_OUT);
+		} 
 		if (source instanceof grafikeditor.meineditor.Gateway) {
+			if (true)
+				return true;
+			else setError(ECincoError.MAX_OUT);
+		} 
+		if (source instanceof grafikeditor.meineditor.Variable) {
 			if (true)
 				return true;
 			else setError(ECincoError.MAX_OUT);
@@ -122,11 +122,6 @@ public class CreateLabeledTransitionFeature extends AbstractCreateConnectionFeat
 	}
 
 	private boolean checkTarget(Object target){
-		if (target instanceof grafikeditor.meineditor.Variable) {
-			if (true)
-				return true;
-			else setError(ECincoError.MAX_IN);
-		}
 		if (target instanceof grafikeditor.meineditor.Terminal) {
 			if (true)
 				return true;
@@ -138,6 +133,11 @@ public class CreateLabeledTransitionFeature extends AbstractCreateConnectionFeat
 			else setError(ECincoError.MAX_IN);
 		}
 		if (target instanceof grafikeditor.meineditor.End) {
+			if (true)
+				return true;
+			else setError(ECincoError.MAX_IN);
+		}
+		if (target instanceof grafikeditor.meineditor.Variable) {
 			if (true)
 				return true;
 			else setError(ECincoError.MAX_IN);

@@ -8,13 +8,10 @@ import org.eclipse.core.resources.ResourcesPlugin;
 import de.jabc.cinco.meta.core.utils.EclipseFileUtils;
 import graphmodel.Edge
 import grafikeditor.meineditor.Terminal
-import org.eclipse.emf.common.util.EList
 import grafikeditor.meineditor.Gateway
 import graphmodel.Node
 import grafikeditor.meineditor.Start
-import grafikeditor.meineditor.End
 import grafikeditor.meineditor.Variable
-import java.util.List
 import java.util.ArrayList
 
 class Generator implements IGenerator<MeinEditor> {

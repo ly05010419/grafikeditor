@@ -65,7 +65,7 @@ public class AddVariableFeature extends CincoAbstractAddFeature {
 
 		gaService.setSize(rectangle0, 96, 32);
 
-		MeinEditorLayoutUtils.set_Appearance26Style(rectangle0, getDiagram());
+		MeinEditorLayoutUtils.set_Appearance2Style(rectangle0, getDiagram());
 		if (context.getWidth() < 0 && context.getHeight() < 0) {
 			gaService.setLocation(rectangle0, context.getX() + 0, context.getY() + 0);
 		} else {

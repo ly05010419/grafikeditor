@@ -29,10 +29,10 @@ public interface CEnd extends CNode {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @model kind="operation"
-	 *        annotation="http://www.eclipse.org/emf/2002/GenModel body='\n\nreturn getPredecessors(CTerminal.class);'"
+	 *        annotation="http://www.eclipse.org/emf/2002/GenModel body='\n\nreturn getPredecessors(CStart.class);'"
 	 * @generated
 	 */
-	EList<CTerminal> getTerminalPredecessors();
+	EList<CStart> getStartPredecessors();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -47,10 +47,10 @@ public interface CEnd extends CNode {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @model kind="operation"
-	 *        annotation="http://www.eclipse.org/emf/2002/GenModel body='\n\nreturn getPredecessors(CStart.class);'"
+	 *        annotation="http://www.eclipse.org/emf/2002/GenModel body='\n\nreturn getPredecessors(CTerminal.class);'"
 	 * @generated
 	 */
-	EList<CStart> getStartPredecessors();
+	EList<CTerminal> getTerminalPredecessors();
 
 	/**
 	 * <!-- begin-user-doc -->

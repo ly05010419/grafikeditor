@@ -74,15 +74,6 @@ public interface Gateway extends Node {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @model kind="operation"
-	 *        annotation="http://www.eclipse.org/emf/2002/GenModel body='\n\nreturn getPredecessors(grafikeditor.meineditor.Start.class);'"
-	 * @generated
-	 */
-	EList<Start> getStartPredecessors();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation"
 	 *        annotation="http://www.eclipse.org/emf/2002/GenModel body='\n\nreturn getPredecessors(grafikeditor.meineditor.Terminal.class);'"
 	 * @generated
 	 */
@@ -92,10 +83,10 @@ public interface Gateway extends Node {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @model kind="operation"
-	 *        annotation="http://www.eclipse.org/emf/2002/GenModel body='\n\nreturn getPredecessors(grafikeditor.meineditor.Gateway.class);'"
+	 *        annotation="http://www.eclipse.org/emf/2002/GenModel body='\n\nreturn getPredecessors(grafikeditor.meineditor.Start.class);'"
 	 * @generated
 	 */
-	EList<Gateway> getGatewayPredecessors();
+	EList<Start> getStartPredecessors();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -105,6 +96,15 @@ public interface Gateway extends Node {
 	 * @generated
 	 */
 	EList<Variable> getVariablePredecessors();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 *        annotation="http://www.eclipse.org/emf/2002/GenModel body='\n\nreturn getPredecessors(grafikeditor.meineditor.Gateway.class);'"
+	 * @generated
+	 */
+	EList<Gateway> getGatewayPredecessors();
 
 	/**
 	 * <!-- begin-user-doc -->

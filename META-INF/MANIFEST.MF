@@ -20,17 +20,7 @@ Require-Bundle: org.eclipse.emf.ecore;visibility:=reexport,grafikedito
  se.ui.navigator,org.eclipse.graphiti.ui,org.eclipse.ui.ide,org.eclips
  e.emf.transaction,de.jabc.cinco.meta.libraries,org.eclipse.xtend.type
  system.emf,org.eclipse.emf.ecore.xmi,de.jabc.cinco.meta.plugin.genera
- tor.runtime;bundle-version="0.7.0",de.jabc.cinco.meta.plugin.generato
- r.runtime,de.jabc.cinco.meta.plugin.generator.runtime,de.jabc.cinco.m
- eta.plugin.generator.runtime,de.jabc.cinco.meta.plugin.generator.runt
- ime,de.jabc.cinco.meta.plugin.generator.runtime,de.jabc.cinco.meta.pl
- ugin.generator.runtime,de.jabc.cinco.meta.plugin.generator.runtime,de
- .jabc.cinco.meta.plugin.generator.runtime,de.jabc.cinco.meta.plugin.g
- enerator.runtime,de.jabc.cinco.meta.plugin.generator.runtime,de.jabc.
- cinco.meta.plugin.generator.runtime,de.jabc.cinco.meta.plugin.generat
- or.runtime,de.jabc.cinco.meta.plugin.generator.runtime,de.jabc.cinco.
- meta.plugin.generator.runtime,de.jabc.cinco.meta.plugin.generator.run
- time,de.jabc.cinco.meta.plugin.generator.runtime
+ tor.runtime
 Bundle-ManifestVersion: 2
 Bundle-ActivationPolicy: lazy
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8

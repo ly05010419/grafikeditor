@@ -92,7 +92,7 @@ public class CLabeledTransitionImpl extends CEdgeImpl implements CLabeledTransit
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean canReconnectSource(final CTerminal source) {
+	public boolean canReconnectSource(final CStart source) {
 		org.eclipse.graphiti.mm.pictograms.Diagram d = (org.eclipse.graphiti.mm.pictograms.Diagram) this.getDiagram();
 		grafikeditor.graphiti.MeinEditorFeatureProvider provider = (grafikeditor.graphiti.MeinEditorFeatureProvider) org.eclipse.graphiti.ui.services.GraphitiUi.getExtensionManager().createFeatureProvider(d);
 		
@@ -113,7 +113,7 @@ public class CLabeledTransitionImpl extends CEdgeImpl implements CLabeledTransit
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void reconnectSource(final CTerminal source) {
+	public void reconnectSource(final CStart source) {
 		org.eclipse.graphiti.mm.pictograms.Diagram d = (org.eclipse.graphiti.mm.pictograms.Diagram) this.getDiagram();
 		grafikeditor.graphiti.MeinEditorFeatureProvider provider = (grafikeditor.graphiti.MeinEditorFeatureProvider) org.eclipse.graphiti.ui.services.GraphitiUi.getExtensionManager().createFeatureProvider(d);
 		
@@ -206,7 +206,7 @@ public class CLabeledTransitionImpl extends CEdgeImpl implements CLabeledTransit
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean canReconnectSource(final CStart source) {
+	public boolean canReconnectSource(final CTerminal source) {
 		org.eclipse.graphiti.mm.pictograms.Diagram d = (org.eclipse.graphiti.mm.pictograms.Diagram) this.getDiagram();
 		grafikeditor.graphiti.MeinEditorFeatureProvider provider = (grafikeditor.graphiti.MeinEditorFeatureProvider) org.eclipse.graphiti.ui.services.GraphitiUi.getExtensionManager().createFeatureProvider(d);
 		
@@ -227,7 +227,7 @@ public class CLabeledTransitionImpl extends CEdgeImpl implements CLabeledTransit
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void reconnectSource(final CStart source) {
+	public void reconnectSource(final CTerminal source) {
 		org.eclipse.graphiti.mm.pictograms.Diagram d = (org.eclipse.graphiti.mm.pictograms.Diagram) this.getDiagram();
 		grafikeditor.graphiti.MeinEditorFeatureProvider provider = (grafikeditor.graphiti.MeinEditorFeatureProvider) org.eclipse.graphiti.ui.services.GraphitiUi.getExtensionManager().createFeatureProvider(d);
 		
@@ -544,7 +544,7 @@ public class CLabeledTransitionImpl extends CEdgeImpl implements CLabeledTransit
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean canClone(final CTerminal source, final CEnd target) {
+	public boolean canClone(final CStart source, final CEnd target) {
 		final CLabeledTransition clone = grafikeditor.api.cmeineditor.CmeineditorFactory.eINSTANCE.createCLabeledTransition();
 		java.util.ArrayList<org.eclipse.graphiti.mm.pictograms.PictogramElement> pe = new java.util.ArrayList<>();
 		pe.add(this.getPictogramElement());
@@ -583,7 +583,7 @@ public class CLabeledTransitionImpl extends CEdgeImpl implements CLabeledTransit
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CLabeledTransition clone(final CTerminal source, final CEnd target) {
+	public CLabeledTransition clone(final CStart source, final CEnd target) {
 		final CLabeledTransition clone = grafikeditor.api.cmeineditor.CmeineditorFactory.eINSTANCE.createCLabeledTransition();
 		java.util.ArrayList<org.eclipse.graphiti.mm.pictograms.PictogramElement> pe = new java.util.ArrayList<>();
 		pe.add(this.getPictogramElement());
@@ -646,7 +646,7 @@ public class CLabeledTransitionImpl extends CEdgeImpl implements CLabeledTransit
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean canClone(final CTerminal source, final CTerminal target) {
+	public boolean canClone(final CStart source, final CTerminal target) {
 		final CLabeledTransition clone = grafikeditor.api.cmeineditor.CmeineditorFactory.eINSTANCE.createCLabeledTransition();
 		java.util.ArrayList<org.eclipse.graphiti.mm.pictograms.PictogramElement> pe = new java.util.ArrayList<>();
 		pe.add(this.getPictogramElement());
@@ -685,7 +685,7 @@ public class CLabeledTransitionImpl extends CEdgeImpl implements CLabeledTransit
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CLabeledTransition clone(final CTerminal source, final CTerminal target) {
+	public CLabeledTransition clone(final CStart source, final CTerminal target) {
 		final CLabeledTransition clone = grafikeditor.api.cmeineditor.CmeineditorFactory.eINSTANCE.createCLabeledTransition();
 		java.util.ArrayList<org.eclipse.graphiti.mm.pictograms.PictogramElement> pe = new java.util.ArrayList<>();
 		pe.add(this.getPictogramElement());
@@ -748,7 +748,7 @@ public class CLabeledTransitionImpl extends CEdgeImpl implements CLabeledTransit
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean canClone(final CTerminal source, final CVariable target) {
+	public boolean canClone(final CStart source, final CVariable target) {
 		final CLabeledTransition clone = grafikeditor.api.cmeineditor.CmeineditorFactory.eINSTANCE.createCLabeledTransition();
 		java.util.ArrayList<org.eclipse.graphiti.mm.pictograms.PictogramElement> pe = new java.util.ArrayList<>();
 		pe.add(this.getPictogramElement());
@@ -787,7 +787,7 @@ public class CLabeledTransitionImpl extends CEdgeImpl implements CLabeledTransit
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CLabeledTransition clone(final CTerminal source, final CVariable target) {
+	public CLabeledTransition clone(final CStart source, final CVariable target) {
 		final CLabeledTransition clone = grafikeditor.api.cmeineditor.CmeineditorFactory.eINSTANCE.createCLabeledTransition();
 		java.util.ArrayList<org.eclipse.graphiti.mm.pictograms.PictogramElement> pe = new java.util.ArrayList<>();
 		pe.add(this.getPictogramElement());
@@ -850,7 +850,7 @@ public class CLabeledTransitionImpl extends CEdgeImpl implements CLabeledTransit
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean canClone(final CTerminal source, final CGateway target) {
+	public boolean canClone(final CStart source, final CGateway target) {
 		final CLabeledTransition clone = grafikeditor.api.cmeineditor.CmeineditorFactory.eINSTANCE.createCLabeledTransition();
 		java.util.ArrayList<org.eclipse.graphiti.mm.pictograms.PictogramElement> pe = new java.util.ArrayList<>();
 		pe.add(this.getPictogramElement());
@@ -889,7 +889,7 @@ public class CLabeledTransitionImpl extends CEdgeImpl implements CLabeledTransit
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CLabeledTransition clone(final CTerminal source, final CGateway target) {
+	public CLabeledTransition clone(final CStart source, final CGateway target) {
 		final CLabeledTransition clone = grafikeditor.api.cmeineditor.CmeineditorFactory.eINSTANCE.createCLabeledTransition();
 		java.util.ArrayList<org.eclipse.graphiti.mm.pictograms.PictogramElement> pe = new java.util.ArrayList<>();
 		pe.add(this.getPictogramElement());
@@ -1360,7 +1360,7 @@ public class CLabeledTransitionImpl extends CEdgeImpl implements CLabeledTransit
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean canClone(final CStart source, final CEnd target) {
+	public boolean canClone(final CTerminal source, final CEnd target) {
 		final CLabeledTransition clone = grafikeditor.api.cmeineditor.CmeineditorFactory.eINSTANCE.createCLabeledTransition();
 		java.util.ArrayList<org.eclipse.graphiti.mm.pictograms.PictogramElement> pe = new java.util.ArrayList<>();
 		pe.add(this.getPictogramElement());
@@ -1399,7 +1399,7 @@ public class CLabeledTransitionImpl extends CEdgeImpl implements CLabeledTransit
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CLabeledTransition clone(final CStart source, final CEnd target) {
+	public CLabeledTransition clone(final CTerminal source, final CEnd target) {
 		final CLabeledTransition clone = grafikeditor.api.cmeineditor.CmeineditorFactory.eINSTANCE.createCLabeledTransition();
 		java.util.ArrayList<org.eclipse.graphiti.mm.pictograms.PictogramElement> pe = new java.util.ArrayList<>();
 		pe.add(this.getPictogramElement());
@@ -1462,7 +1462,7 @@ public class CLabeledTransitionImpl extends CEdgeImpl implements CLabeledTransit
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean canClone(final CStart source, final CTerminal target) {
+	public boolean canClone(final CTerminal source, final CTerminal target) {
 		final CLabeledTransition clone = grafikeditor.api.cmeineditor.CmeineditorFactory.eINSTANCE.createCLabeledTransition();
 		java.util.ArrayList<org.eclipse.graphiti.mm.pictograms.PictogramElement> pe = new java.util.ArrayList<>();
 		pe.add(this.getPictogramElement());
@@ -1501,7 +1501,7 @@ public class CLabeledTransitionImpl extends CEdgeImpl implements CLabeledTransit
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CLabeledTransition clone(final CStart source, final CTerminal target) {
+	public CLabeledTransition clone(final CTerminal source, final CTerminal target) {
 		final CLabeledTransition clone = grafikeditor.api.cmeineditor.CmeineditorFactory.eINSTANCE.createCLabeledTransition();
 		java.util.ArrayList<org.eclipse.graphiti.mm.pictograms.PictogramElement> pe = new java.util.ArrayList<>();
 		pe.add(this.getPictogramElement());
@@ -1564,7 +1564,7 @@ public class CLabeledTransitionImpl extends CEdgeImpl implements CLabeledTransit
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean canClone(final CStart source, final CVariable target) {
+	public boolean canClone(final CTerminal source, final CVariable target) {
 		final CLabeledTransition clone = grafikeditor.api.cmeineditor.CmeineditorFactory.eINSTANCE.createCLabeledTransition();
 		java.util.ArrayList<org.eclipse.graphiti.mm.pictograms.PictogramElement> pe = new java.util.ArrayList<>();
 		pe.add(this.getPictogramElement());
@@ -1603,7 +1603,7 @@ public class CLabeledTransitionImpl extends CEdgeImpl implements CLabeledTransit
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CLabeledTransition clone(final CStart source, final CVariable target) {
+	public CLabeledTransition clone(final CTerminal source, final CVariable target) {
 		final CLabeledTransition clone = grafikeditor.api.cmeineditor.CmeineditorFactory.eINSTANCE.createCLabeledTransition();
 		java.util.ArrayList<org.eclipse.graphiti.mm.pictograms.PictogramElement> pe = new java.util.ArrayList<>();
 		pe.add(this.getPictogramElement());
@@ -1666,7 +1666,7 @@ public class CLabeledTransitionImpl extends CEdgeImpl implements CLabeledTransit
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean canClone(final CStart source, final CGateway target) {
+	public boolean canClone(final CTerminal source, final CGateway target) {
 		final CLabeledTransition clone = grafikeditor.api.cmeineditor.CmeineditorFactory.eINSTANCE.createCLabeledTransition();
 		java.util.ArrayList<org.eclipse.graphiti.mm.pictograms.PictogramElement> pe = new java.util.ArrayList<>();
 		pe.add(this.getPictogramElement());
@@ -1705,7 +1705,7 @@ public class CLabeledTransitionImpl extends CEdgeImpl implements CLabeledTransit
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CLabeledTransition clone(final CStart source, final CGateway target) {
+	public CLabeledTransition clone(final CTerminal source, final CGateway target) {
 		final CLabeledTransition clone = grafikeditor.api.cmeineditor.CmeineditorFactory.eINSTANCE.createCLabeledTransition();
 		java.util.ArrayList<org.eclipse.graphiti.mm.pictograms.PictogramElement> pe = new java.util.ArrayList<>();
 		pe.add(this.getPictogramElement());
